@@ -1,0 +1,19 @@
+{
+  "name": "angular-1x",
+  "homepage": "https://github.com/51todos/angular-1x",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-messages": "1.5.8",
+    "angular-route": "1.5.8"
+  }
+}

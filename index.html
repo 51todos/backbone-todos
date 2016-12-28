@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" ng-app="App">
+<head>
+    <title>hell angular</title>
+	<meta charset="utf-8">
+
+    <script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-messages/angular-messages.js"></script>
+</head>
+<body>
+
+<div><a href="#/home">Home</a></div>
+<div><a href="#/test">ng-test</a></div>
+<div><a href="#/form">ng-form</a></div>
+
+<div class="view-animate-container">
+    <div ng-view class="view-animate"></div>
+</div>
+
+<script src="app/main.js"></script>
+<script src="app/controllers/HomeController.js"></script>
+<script src="app/controllers/TestController.js"></script>
+</body>
+</html>
