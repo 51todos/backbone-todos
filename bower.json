@@ -1,8 +1,16 @@
 {
-  "name": "angular-1x",
-  "homepage": "https://github.com/51todos/angular-1x",
-  "description": "",
-  "main": "",
+  "name": "backbone-todos",
+  "homepage": "https://github.com/51todos/backbone-todos",
+  "authors": [
+    "Feng.He"
+  ],
+  "description": "Do test",
+  "main": "gulpfile.js",
+  "keywords": [
+    "backbone-todos",
+    "backbone-epoxy",
+    "backbone-marionette"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -12,8 +20,14 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.5.8",
-    "angular-messages": "1.5.8",
-    "angular-route": "1.5.8"
+    "backbone": "^1.3.3",
+    "requirejs": "^2.3.2",
+    "jquery": "^2.2.4",
+    "underscore": "^1.8.3",
+    "backbone.epoxy": "^1.3.1",
+    "backbone.marionette": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "json2": "*",
+    "require-css": "^0.1.8"
   }
 }
