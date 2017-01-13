@@ -2,21 +2,26 @@
  * main.js
  * 配置requirejs
  */
+
+// bower components path
+var PATH_BOWER = '../bower_components';
+
 requirejs.config({
-    baseUrl: '../bower_components',
+    baseUrl: './',
 
     // 框架依赖
-    deps:['jquery', 'backbone', 'bootstrap'],
+    deps:['jquery', 'backbone', 'bootstrap', 'backbone.localStorage'],
 
     // 路径配置
     paths: {
-        'jquery': 'jquery/dist/jquery',
-        'json2': 'json2/json2',
-        'underscore': 'underscore/underscore',
-        'backbone': 'backbone/backbone',
-        'backbone.marionette': 'backbone.marionette/lib/backbone.marionette',
-        'css': 'require-css/css',
-        'bootstrap': 'bootstrap/dist/js/bootstrap'
+        'jquery': PATH_BOWER + '/jquery/dist/jquery',
+        'json2': PATH_BOWER + '/json2/json2',
+        'underscore': PATH_BOWER + '/underscore/underscore',
+        'backbone': PATH_BOWER + '/backbone/backbone',
+        'backbone.marionette': PATH_BOWER + '/backbone.marionette/lib/backbone.marionette',
+        'backbone.localStorage': PATH_BOWER + '/backbone.localStorage/backbone.localStorage',
+        'css': PATH_BOWER + '/require-css/css',
+        'bootstrap': PATH_BOWER + '/bootstrap/dist/js/bootstrap'
     },
 
     // 配置模块依赖
@@ -29,15 +34,15 @@ requirejs.config({
             deps: ['jquery', 'underscore', 'json2'],
             exports: 'Backbone'
         },
-        //'backbone.relational': ['backbone'],
+        'backbone.localStorage': ['backbone'],
         //'backbone.syphon': ['backbone'],
 
-        'bootstrap': ['jquery', 'css!../bower_components/bootstrap/dist/css/bootstrap.css']
+        'bootstrap': ['jquery', 'css!'+ PATH_BOWER +'/bootstrap/dist/css/bootstrap.css']
     },
 
     // 框架回调
     callback: function() {
-        require(['app.js'], function(App) {
+        require(['app'], function(App) {
             App.start();
         });
     }

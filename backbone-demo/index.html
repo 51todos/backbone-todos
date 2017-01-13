@@ -11,19 +11,28 @@
 
         <hr class="clearfix">
 
+        <!-- name -->
         <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            <div class="input-group">
+                <div class="input-group-addon">Name</div>
+                <input type="text" class="form-control" name="name">
+            </div>
         </div>
+
+        <!-- sex -->
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Sex</div>
+                <input type="text" class="form-control" name="sex">
+            </div>
+        </div>
+
+        <!-- Email -->
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon">Email</div>
-                <input class="form-control" type="email" placeholder="Enter email">
+                <input class="form-control" type="email" name="email">
             </div>
-        </div>
-        <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword2">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
         </div>
 
         <hr class="clearfix">
@@ -41,34 +50,18 @@
     <hr class="clearfix">
 
     <table class="table">
-        <caption>新增数据列表</caption>
+        <caption>数据表格(tableList)</caption>
         <thead>
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Sex</th>
+                <th>Email</th>
+                <th>操作</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
+
         </tbody>
     </table>
 </div>
