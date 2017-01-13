@@ -4,6 +4,7 @@
 define(function() {
 	// item template
 	var itemTpl = [
+		'<td><input type="checkbox" name="_cb-<%=cid%>" <%=state==true?"checked":""%>></td>',
 		'<td><%=cid%></td>',
 		'<td><%=name%></td>',
 		'<td><%=sex%></td>',
@@ -22,11 +23,17 @@ define(function() {
 
 		initialize: function() {
 			this.listenTo(this.model, 'destroy', this.remove);
+			this.listenTo(this.model, 'change:state', this.changeState);
 		},
 
 		render: function() {
 			this.$el.html(this.template(_.extend(this.model.toJSON(), {cid:this.model.cid})));
 			return this;
+		},
+
+		changeState: function(model, state) {
+			console.log(">>>>>>>>>>>>>>>>>>", model, state);
+			this.$el.find(':checkbox').attr('checked', state);
 		},
 
 		action_del: function() {

@@ -29,6 +29,12 @@ define([
 
 		createItem: function(attrs) {
 			tableList.create(attrs);
+		},
+
+		checkedAll: function() {
+			tableList.each(function(itemModel) {
+				itemModel.toggle();
+			})
 		}
 	});
 });

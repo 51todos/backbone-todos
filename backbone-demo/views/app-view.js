@@ -27,6 +27,7 @@ define([
 		render: function() {
 			var that = this;
 			var $btn = this.$(':button');
+			var $cb = this.$('#J_checkedAll');
 
 			$btn.on('click', function() {
 				var params = that._getParams();
@@ -39,6 +40,10 @@ define([
 				//tableList.set([itemModel]);
 				//tableList.push(itemModel);
 			});
+
+			$cb.on('click', function() {
+				that.tableView.checkedAll();
+			})
 		}
 	})
 
