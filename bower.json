@@ -29,6 +29,6 @@
     "bootstrap": "^3.3.7",
     "json2": "*",
     "require-css": "^0.1.8",
-    "backbone.localStorage": "backbone.localstorage#^1.1.16"
+    "backbone.localStorage": "^1.1.16"
   }
 }
