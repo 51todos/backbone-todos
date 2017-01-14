@@ -16,7 +16,13 @@ define(function() {
 		// Toggle the `state`
 		toggle: function (newState) {
 			this.save({
-				state: newState //!this.get('state')
+				state: newState
+			});
+		},
+
+		some: function () {
+			this.save({
+				state: !this.get('state')
 			});
 		}
 	});

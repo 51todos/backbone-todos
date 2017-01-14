@@ -18,7 +18,8 @@ define(function() {
 		template: _.template(itemTpl),
 
 		events: {
-			'click a[id^=J_action-del]': 'action_del'
+			'click a[id^=J_action-del]': 'action_del',
+			'click :checkbox': 'action_cb'
 		},
 
 		initialize: function() {
@@ -32,8 +33,11 @@ define(function() {
 		},
 
 		changeState: function(model, state) {
-			console.log(">>>>>>>>>>>>>>>>>>", model, state);
 			this.$el.find(':checkbox').prop('checked', state);
+		},
+
+		action_cb: function(evt) {
+			this.model.save({state:$(evt.target).is(":checked")}, {merge:true});
 		},
 
 		action_del: function() {

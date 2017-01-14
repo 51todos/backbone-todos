@@ -27,8 +27,10 @@ define([
 		render: function() {
 			var that = this;
 			var $btn = this.$(':button');
-			var $cb = this.$('#J_checkedAll');
+			var $checkAll = this.$('#J_checkedAll');
+			var $checkSome = this.$('#J_checkedSome');
 
+			// 新增按钮
 			$btn.on('click', function() {
 				var params = that._getParams();
 
@@ -41,9 +43,15 @@ define([
 				//tableList.push(itemModel);
 			});
 
-			$cb.on('click', function() {
-				that.tableView.checkedAll($cb.is(":checked"));
-			})
+			// 全部选中
+			$checkAll.on('click', function() {
+				that.tableView.checkedAll($(this).is(":checked"));
+			});
+
+			// 部分选中
+			$checkSome.on('click', function() {
+				that.tableView.checkedSome();
+			});
 		}
 	})
 

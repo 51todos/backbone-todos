@@ -35,6 +35,12 @@ define([
 			tableList.each(function(itemModel) {
 				itemModel.toggle(state);
 			})
+		},
+
+		checkedSome: function() {
+			tableList.each(function(itemModel) {
+				itemModel.some();
+			})
 		}
 	});
 });
