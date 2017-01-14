@@ -1,0 +1,124 @@
+/**
+ * 代理商服务列表
+ */
+
+.service-list-container .service-row {
+    margin: 0 0 24px 0;
+    padding: 24px 12px;
+    border: 1px solid #e5e5e5;
+    color: #333333;
+}
+
+.service-list-container .service-container {
+    padding: 0 12px;
+}
+
+.service-list-container .title-fee-special-button {
+    padding: 0px;
+}
+
+.service-list-container .title-fee-special {
+    float: left;
+}
+
+.service-list-container .title {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 991px){
+    .service-list-container .title {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+}
+
+.service-list-container .fee {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #009944;
+}
+
+@media(max-width: 480px){
+    .service-list-container .handling-charge {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+.service-list-container .special-offers {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@media(max-width: 991px){
+    .service-list-container .special-offers-title {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+.service-list-container .btn-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.service-list-container .request-stop-service {
+    width: 103px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+}
+
+@media(max-width: 480px){
+    .service-list-container .request-stop-service {
+        width: 82px;
+    }
+}
+
+
+.service-list-container .service-desc {
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+
+@media(max-width: 991px){
+    .service-list-container .service-desc {
+        margin-top: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+.service-list-container .service-desc .service-title {
+    display: none;
+}
+
+@media(max-width: 991px){
+    .service-list-container .service-desc .service-title {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 5px;
+        color: #333;
+    }    
+}
+
+.service-list-container .service-detail-desc {
+    display: none;
+}
+
+.service-list-container .service-desc .unfold,
+.service-list-container .service-desc .fold {
+    color: #438eb9;
+}

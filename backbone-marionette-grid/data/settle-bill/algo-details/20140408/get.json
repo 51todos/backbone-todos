@@ -1,0 +1,44 @@
+{
+    "settleAmt":113800,
+    "settleDate": 20140408,
+    "txAmt": 114000,
+    "feeAmt": 200,
+    "txCount": 600,
+    "terminalGroups": [{
+        "terminalNo":5007123,
+        "settleAmt": 57000,
+        "txAmt": 56900,
+        "feeAmt": 100,
+        "txCount": 300
+    }, {
+        "terminalNo":5007128,
+        "settleAmt": 57000,
+        "txAmt": 56900,
+        "feeAmt": 100,
+        "txCount": 300
+    },{
+        "terminalNo":5008245,
+        "settleAmt": 57200,
+        "txAmt": 56958,
+        "feeAmt": 100,
+        "txCount": 100
+    },{
+        "terminalNo":5011445,
+        "settleAmt": 57200,
+        "txAmt": 56958,
+        "feeAmt": 100,
+        "txCount": 100
+    },{
+        "terminalNo":5013245,
+        "settleAmt": 57200,
+        "txAmt": 56958,
+        "feeAmt": 100,
+        "txCount": 100
+    },{
+        "terminalNo":5010005,
+        "settleAmt": 57200,
+        "txAmt": 56958,
+        "feeAmt": 100,
+        "txCount": 100
+    }]
+}

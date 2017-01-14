@@ -1,0 +1,104 @@
+/* line 2, ../sass/opf-component.scss */
+.bootbox.modal {
+  overflow: visible;
+}
+
+/* line 6, ../sass/opf-component.scss */
+.pop-detail-dialog {
+  padding: .2em .2em 0 .2em !important;
+  overflow: initial !important;
+  background: #FFF;
+  border: 1px solid #999 \9;
+  /* IE8-9 */
+  -webkit-box-shadow: 0 6px 10px 0;
+  -moz-box-shadow: 0 6px 10px 0;
+  -ms-box-shadow: 0 6px 10px 0;
+  box-shadow: 0 6px 10px 0;
+}
+
+/* line 17, ../sass/opf-component.scss */
+.pop-detail-dialog:before {
+  content: url("images/dialog_top_bar.png");
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: -13px;
+}
+
+/* line 25, ../sass/opf-component.scss */
+.pop-detail-dialog:after {
+  content: url("images/dialog_bottom_bar.png");
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+}
+
+@media (max-width: 550px) {
+  /* line 34, ../sass/opf-component.scss */
+  .ui-dialog:before {
+    display: none;
+  }
+
+  /* line 38, ../sass/opf-component.scss */
+  .ui-dialog:after {
+    display: none;
+  }
+}
+/* line 44, ../sass/opf-component.scss */
+.pop-detail-dialog .ui-dialog-titlebar {
+  height: 85px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* line 50, ../sass/opf-component.scss */
+.pop-detail-dialog .ui-dialog-titlebar .ui-dialog-title {
+  margin-top: 20px;
+  text-indent: 2.4em;
+  font-size: 1.6em;
+}
+
+/* line 56, ../sass/opf-component.scss */
+.pop-detail-dialog .ui-dialog-titlebar-close {
+  right: 1em !important;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* line 64, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table {
+  width: 100%;
+  border: none;
+}
+/* line 67, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table tr:hover {
+  background-color: initial;
+}
+
+/* line 72, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table thead th:first-child {
+  text-align: left;
+}
+
+/* line 76, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table tbody td:first-child {
+  text-align: left;
+}
+
+/* line 80, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table thead th:last-child {
+  text-align: right;
+}
+
+/* line 84, ../sass/opf-component.scss */
+.pop-detail-dialog .opf-table tbody td:last-child {
+  text-align: right;
+  white-space: normal;
+}
+
+/* line 89, ../sass/opf-component.scss */
+.pop-detail-dialog .foot {
+  padding: 10px 18px;
+}

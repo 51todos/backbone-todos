@@ -1,0 +1,32 @@
+{
+  "repairInfoMap": {
+    "repairAmt": 2000,
+    "unRepairAmt": 200,
+    "repairdeAmt": 13022,
+    "repairingAmt": 10000,
+    "unFreezeingAmt": 1365,
+    "unFreezeSum": 2326555
+  },
+  "listerr": [{
+    "txTime":"20150501",
+    "txType":"1",
+    "cycle":"200",
+    "vocheNo":"2001222",
+    "errReason":"fdfd",
+    "acNo": "0215584444444",
+    "nextDo": "xxxx",
+    "txAmt": "20162320"
+  }],
+  "settleDtlMap": [{
+    "errAmt": 0,
+    "errOkAmt": 0,
+    "feeAmt": 20.08,
+    "mchtNo": "001140158120001",
+    "repairAmt": 0,
+    "settleAmt": 2653.92,
+    "settleDate": "20150917",
+    "txAmt": 2674,
+    "unrepairAmt": 0,
+    "uperrAmt": 0
+  }]
+}

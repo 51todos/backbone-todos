@@ -1,0 +1,938 @@
+$headDevideColor : #E68A8A;
+
+
+@mixin borderDivide {
+    border-top: 1px solid $headDevideColor;
+    border-bottom: 1px solid $headDevideColor;
+}
+
+.settle-head-wrap {
+    margin-bottom: 24px;
+    .select-date-wrap {
+        display: inline-block;
+        float: left;
+        width: 33.3%;
+    }
+    .settle-title {
+        padding-top: 3px;
+        display: inline-block;
+        width: 33.3%;
+        text-align: center;
+    }
+    .back2now-wrapper {
+        display: inline-block;
+        float: right;
+        width: 32%;
+        text-align: right;
+    }
+
+    .back2now {
+        padding: 6px 22px;
+    }
+
+    .icon-angle-left,
+    .icon-angle-right{
+        font-size: 16px;
+    }
+
+    .icon-angle-left,
+    .icon-angle-right,
+    .icon-caret-down {
+        color: #999;
+    }
+
+    .btn-group {
+        margin: 0px !important;
+    }
+
+    button {
+        height: 44px;
+    }
+}
+
+.settle-head-wrap {
+}
+
+.settle-head-wrap .date {
+    padding-right: 7px;
+}
+
+.settle-head-wrap .record-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+
+    .xs-container.record-container {
+        width: 100%;
+    }
+
+    .xs-container .opf-screen-list {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .xs-container .opf-screen-list table {
+        width: 100%;
+    }
+
+    /* .xs-container .opf-screen-list .more-trigger {
+        height: 40px;
+        margin-top: 20px;
+        line-height: 40px;
+        background: #eee;
+        cursor: pointer;
+    } */
+
+
+    .opf-screen-detailing .opf-screen-list {
+        display: none !important;
+    }
+    /*小屏幕默认不可视*/
+    .xs-container .opf-screen-detail {
+        display: none;
+    }
+    .opf-screen-detailing .opf-screen-detail {
+      padding-left: 0;
+      padding-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .record-container {
+        width: 1200px;
+    }
+    .opf-screen-list {
+      padding-right: 32px;
+      width: 872px;
+    }
+    .opf-screen-detail {
+        width: 320px;
+    }
+
+    .calendar-wrap td {
+        width: 118px;
+    }
+    
+    .calendar-wrap .cal-body td{
+        height: 110px;
+    }
+
+    .calendar-wrap .cal-body td div{
+        line-height: 40px;
+    }
+
+    .calendar-wrap .cal-body .cal-date {
+        font-size: 14px;
+    }
+
+    .calendar-wrap .cal-body .cal-amt {
+        font-size: 16px;
+    }
+
+    .calendar-wrap .cal-body .cal-re-settle {
+        font-size: 14px;
+    }
+
+    .calendar-wrap .cal-body .cal-status {
+        font-size: 14px;
+    }
+
+    .opf-screen-detail .ct-inner td {
+        font-size: 16px;
+    }
+
+    .calendar-wrap .calData-wrap.no-data .cal-status {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .record-container {
+        width: 100%;
+    }
+    .opf-screen-list {
+      padding-right: 1.6%;
+      padding-left: 1%;
+      width: 72.6%;
+    }
+    .opf-screen-detail {
+        width: 25.7%;
+    }
+
+    .calendar-wrap td {
+        width: 14.3%;
+    }
+
+    .calendar-wrap .cal-body td{
+        height: 110px;
+    }
+
+    .calendar-wrap .cal-body td div{
+        line-height: 40px;
+    }
+
+    .calendar-wrap .cal-body .cal-date {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-amt {
+        font-size: 14px;
+    }
+
+    .calendar-wrap .cal-body .cal-re-settle {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-status {
+        font-size: 12px;
+    }
+
+
+    .calendar-wrap .calData-wrap.no-data .cal-status {
+        font-size: 12px;
+    }
+    .opf-screen-detail .ct-inner td {
+        font-size: 14px;
+    }
+
+    .opf-screen-detail .ct-inner tbody td {
+        padding: 11px 14px;
+    }
+
+    /* 平板样式>>>> */
+    .sm-container.record-container {
+        width: 100%;
+        font-size: 16px;
+    }
+    .sm-container.record-container:before {
+        content: ".";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 43%;
+        text-indent: -9999px;
+        background: #cfcfcf;
+    }
+    .sm-container .opf-screen-list {
+      width: 43%;
+      padding-right: 0px;
+      padding-left: 0px;
+      border-top: 1px solid #cfcfcf;
+      border-bottom: 1px solid #cfcfcf;
+    }
+
+    .sm-container .opf-screen-list table {
+        width: 100%;
+        border: none;
+    }
+
+    .sm-container tr.active .td-arrow-inner:before,
+    .sm-container tr.active .td-arrow-inner:after {
+        display: none;
+    }
+
+    .sm-container .opf-screen-list .more-trigger {
+        border: none;
+    }
+
+
+    .sm-container.opf-screen-detailing .opf-screen-detail {
+        width: 57%;
+        position: relative;
+        float: right;
+        /*进入详细页面后，详细页面总是可视*/
+        display: block;
+    }
+
+    .sm-container .opf-screen-detail .summary-item {
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+            -ms-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .sm-container .opf-screen-detail .summary-item .back-header {
+        height: 46px;
+        line-height: 46px;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+            -ms-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .sm-container .opf-screen-detail .ct-inner td {
+        font-size: 16px;
+    }
+    /* <<<<平板样式 */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* PC日历样式 >>>>*/
+    .record-container {
+        width: 975px;
+    }
+    .opf-screen-list {
+      width: 708px;
+      padding-right: 15.6px;
+      padding-left: 9.7px;
+    }
+    .opf-screen-detail {
+        width: 250.6px;
+    }
+
+    .calendar-wrap td {
+        width: 87px;
+    }
+
+    .calendar-wrap .cal-body td{
+        height: 110px;
+    }
+
+    .calendar-wrap .cal-body td div{
+        line-height: 40px;
+    }
+
+    .calendar-wrap .cal-body .cal-date {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-amt {
+        font-size: 14px;
+    }
+
+    .calendar-wrap .cal-body .cal-re-settle {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-status {
+        font-size: 12px;
+    }
+
+
+    .calendar-wrap .calData-wrap.no-data .cal-status {
+        font-size: 12px;
+    }
+    .opf-screen-detail .ct-inner td {
+        font-size: 14px;
+    }
+    .opf-screen-detail .ct-inner tbody td {
+        padding: 11px 14px;
+    }
+    /* <<<PC日历样式 */
+
+    /* 平板样式>>>> */
+    .sm-container.record-container {
+        width: 100%;
+        font-size: 16px;
+    }
+    .sm-container.record-container:before {
+        content: ".";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 43%;
+        text-indent: -9999px;
+        background: #cfcfcf;
+    }
+    .sm-container .opf-screen-list {
+      width: 43%;
+      padding-right: 0px;
+      padding-left: 0px;
+      border-top: 1px solid #cfcfcf;
+      border-bottom: 1px solid #cfcfcf;
+    }
+
+    .sm-container .opf-screen-list table {
+        width: 100%;
+        border: none;
+    }
+
+    .sm-container tr.active .td-arrow-inner:before,
+    .sm-container tr.active .td-arrow-inner:after {
+        display: none;
+    }
+
+    .sm-container .opf-screen-list .more-trigger {
+        border: none;
+    }
+
+
+    .sm-container.opf-screen-detailing .opf-screen-detail {
+        width: 57%;
+        position: relative;
+        float: right;
+        /*进入详细页面后，详细页面总是可视*/
+        display: block;
+    }
+
+    .sm-container .opf-screen-detail .summary-item {
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+            -ms-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .sm-container .opf-screen-detail .summary-item .back-header {
+        height: 46px;
+        line-height: 46px;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+            -ms-border-radius: 0;
+                border-radius: 0;
+    }
+
+    .sm-container .opf-screen-detail .ct-inner td {
+        font-size: 16px;
+    }
+    /* <<<<平板样式 */
+
+
+    /* 手机横屏样式>>>>> */
+
+    .xs-container.record-container {
+        width: 100%;
+    }
+
+    .xs-container .opf-screen-list {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .xs-container .opf-screen-list table {
+        width: 100%;
+    }
+
+    /* .xs-container .opf-screen-list .more-trigger {
+        height: 40px;
+        margin-top: 20px;
+        line-height: 40px;
+        background: #eee;
+        cursor: pointer;
+    } */
+
+    /*小屏幕默认不可视*/
+    .xs-container .opf-screen-detail {
+        display: none;
+    }
+
+    /* <<<<<手机横屏样式 */
+}
+
+@media (max-width: 767px) {
+    .record-container {
+        width: 975px;
+    }
+    .opf-screen-list {
+      width: 708px;
+      padding-right: 15.6px;
+      padding-left: 9.7px;
+    }
+    .opf-screen-detail {
+        width: 250.6px;
+    }
+
+    .calendar-wrap td {
+        width: 87px;
+    }
+
+    .calendar-wrap .cal-body td{
+        height: 110px;
+    }
+
+    .calendar-wrap .cal-body td div{
+        line-height: 40px;
+    }
+
+    .calendar-wrap .cal-body .cal-date {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-amt {
+        font-size: 14px;
+    }
+
+    .calendar-wrap .cal-body .cal-re-settle {
+        font-size: 12px;
+    }
+
+    .calendar-wrap .cal-body .cal-status {
+        font-size: 12px;
+    }
+
+
+    .calendar-wrap .calData-wrap.no-data .cal-status {
+        font-size: 12px;
+    }
+    .opf-screen-detail .ct-inner td {
+        font-size: 14px;
+    }
+
+    .opf-screen-detail .ct-inner tbody td {
+        padding: 11px 14px;
+    }
+}
+
+
+
+.record-container {
+    padding: 0px;
+    margin: 0 auto;
+}
+.opf-screen-list {
+    position: relative;
+    float: left;
+}
+
+.opf-screen-list .description ul {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #A7A7A7
+}
+/* 日历内部样式 */
+.calendar-wrap table {
+    width: 100%;
+}
+
+.calendar-wrap .cal-head td{
+    color: #999999;
+}
+
+.calendar-wrap .cal-body{
+    border: 1px solid #CCDEEB;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.calendar-wrap .cal-body td{
+    border: 1px solid #BCD4E5;
+}
+
+.calendar-wrap .cal-body td div{
+    line-height: 40px;
+}
+
+.calendar-wrap .cal-body .cal-date {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    line-height: 14px;
+}
+
+.calendar-wrap .cal-body .re-settle {
+    font-size: 13px;
+    margin-left: 17px;
+    letter-spacing: 1px;
+    color: #468866;
+}
+
+.calendar-wrap .cal-body .cal-amt{
+    display: block;
+    line-height: 28px;
+}
+
+.calendar-wrap .cal-body .cal-amt.ocupyTwoRows {
+    line-height: 55px;
+    height: 55px;
+}
+
+.calendar-wrap .cal-body .cal-re-settle {
+    line-height: 28px;
+    color: #468847;
+}
+
+.calendar-wrap .cal-body .cal-status{
+    line-height: 26px;
+}
+
+.calendar-wrap .cal-body .calData-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 8px;
+}
+
+.calendar-wrap .cal-body .calData-wrap.already-settle:hover,
+.calendar-wrap .cal-body .calData-wrap.settleing:hover,
+.calendar-wrap .cal-body .calData-wrap.settle-fail:hover {
+    background-color: #EBF8FB;
+    cursor: pointer;
+}
+
+.calendar-wrap .cal-body .calData-wrap.active{
+    background-color: #FFFECC;
+}
+
+.calendar-wrap .cal-body .calData-wrap.inMonth{
+    /* font-weight: bold; */
+}
+
+.calendar-wrap .cal-body .calData-wrap.outMonth{
+    color: #999999;
+}
+
+.calendar-wrap .cal-body .calData-wrap.no-data{
+    color: #999999;
+}
+
+.calendar-wrap .calData-wrap.settle-fail .cal-status {
+    color: #D15B47;
+}
+/* 日历内部样式 */
+
+
+.opf-screen-list .more-trigger {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #CFCFCF;
+    border-top: none;
+    cursor: pointer;
+}
+
+.opf-screen-detail .summary-item {
+    min-height: 710px;
+    border: 1px solid #BCD4E5;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 767px) {
+    .opf-screen-detail .summary-item {
+        min-height: 0;
+    }
+}
+
+
+
+.opf-screen-detail.summary-item-wrap {
+  position: relative;
+  float: right;
+  min-height: 710px;
+  margin-right: 8px;
+}
+
+
+.opf-screen-detailing .opf-screen-detail {
+    width: 100%;
+    position: relative;
+    float: left;
+    /*进入详细页面后，详细页面总是可视*/
+    display: block;
+    margin-right: 0;
+}
+
+.opf-screen-detail .summary-item .back-header {
+    position: relative;
+    height: 44px;
+    margin-bottom: 24px;
+    line-height: 40px;
+    border-bottom: 1px solid #D1E2ED;
+    -webkit-border-radius: 10px 10px 0 0;
+       -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0;
+    background: #ECF2F7;
+}
+
+.opf-screen-detail .summary-item .back-trigger {
+    font-size: 16px;
+    padding-left: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.opf-screen-detail .summary-item .pre-record-container {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+}
+
+.opf-screen-detail .summary-item .next-record-container {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+.opf-screen-detail .summary-item .header i.disabled {
+    color: #999;
+}
+
+.opf-screen-detail .summary-item .switchPanel {
+    position: absolute;
+    display: none;
+    left: 100%;
+    top:100%;
+}
+
+@media (min-width: 1200px) {
+    .opf-screen-detail .summary-item .switchPanel {
+        display: block;
+    }
+}
+
+.opf-screen-detail .switchPanel ul {
+    padding-left: 17px;
+}
+
+.opf-screen-detail .switchPanel li {
+    padding-left: 5px;
+    margin-bottom: 5px;
+    line-height: 33px;
+    list-style-type: none;
+    text-align: left;
+    background: #cfcfcf;
+    cursor: pointer;
+}
+
+.opf-screen-detail .switchPanel .disabled {
+    background: #666;
+}
+
+.opf-screen-detail .switchPanel li span {
+    width: 100%;
+    display: inline-block;
+    padding-left: 7px;
+    background: #fff;
+    font-size: 15px;
+}
+
+.opf-screen-detail .ct-inner {
+    margin-bottom: 87px;
+}
+@media (max-width: 767px) {
+    .opf-screen-detail .ct-inner{
+        margin-bottom: 0px;
+    }
+}
+
+
+.opf-screen-detail .ct-inner .result-fail-desc {
+    min-height: 40px;
+    margin: 0 16px 22px;
+    padding: 16px 16px 10px;
+    background: #F2DEDE;
+    color: #BB515F;
+    border: 1px solid #EFD5D8;
+}
+
+
+.opf-screen-detail .ct-inner .re-settle-desc {
+    min-height: 40px;
+    margin: 0 16px 32px;
+    padding: 16px 16px 10px;
+    background: #dff0d8;
+    color: #468858;
+    border: 1px solid #d6e9c6;
+}
+
+.opf-screen-detail .ct-inner .result-settling-desc {
+    min-height: 40px;
+    margin: 0 16px 32px;
+    padding: 16px 16px 10px;
+    background: #FFFECC;
+    color: #EE990E;
+    border: 1px solid #FFFE11;
+}
+
+
+
+.opf-screen-detail .ct-inner table {
+    width: 100%;
+    border:none!important;    
+}
+
+.opf-screen-detail .ct-inner caption {
+    padding-bottom: 4px;
+    /* 设计图中有一道分隔线，没做出来 */
+    /* border-bottom: 1px solid; */
+    margin-bottom: 4px;
+}
+
+.opf-screen-detail .ct-inner tbody {
+    td:first-child {
+        position: relative;
+        text-align: left;
+    }
+    td:last-child {
+        text-align: right;
+    }
+}
+
+
+.opf-screen-detail .ct-inner tfoot {
+    text-align: right;
+    color: #49885A;
+    background-color: #fff;
+
+    div {
+        padding: 10px 0px;
+        margin: 0px 16px;
+        border-top: 1px solid #999999;
+    }
+}
+
+.opf-screen-detail .ct-inner tbody tr:last-child td {
+    padding-bottom: 13px;
+}
+
+.opf-screen-detail .ct-inner td {
+    border: none
+}
+
+
+.opf-screen-detail .ct-inner td:first-child {
+    padding-right: 0px;
+}
+
+.opf-screen-detail .ct-inner td:last-child {
+    padding-left: 0px;
+}
+
+.opf-screen-detail .ct-inner .decrease {
+    color: #B94A48;
+}
+
+.opf-screen-detail .ct-inner .increase {
+    color: #468847;
+}
+
+.opf-screen-detail .ct-inner i {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+
+.opf-screen-detail .ct-inner .settle-no-data {
+    width: 150px;
+    margin: 50% auto 80%;
+    text-align: center;
+}
+
+.opf-screen-detail .ct-inner .settle-no-data span {
+    display: block;
+    width: 150px;
+    height: 190px;
+    margin-bottom: 25%;
+    padding: 35% 20% 25% 20%;
+    font-size: 73px;
+    border: 2px dashed #ccc;
+    color: #ccc;
+}
+
+.opf-screen-detail .switch-container {
+    margin: 0px 16px;
+    padding: 24px 0px;
+    border-top: 1px solid #999;
+}
+
+@media (min-width: 1200px) {
+    .opf-screen-detail .switch-container {
+        display: none;
+    }
+}
+
+.opf-screen-detail .switch-container ul {
+    padding: 0px 0px;
+    margin-bottom: 0px;
+}
+
+.opf-screen-detail .switch-container li {
+    float: left;
+    margin: 0 10px;
+    padding-bottom: 3px;
+    list-style-type: none;
+    color: #6fb3e0;
+    background: #fff;
+    cursor: pointer;
+}
+
+.opf-screen-detail .switch-container .disabled {
+    background: #999;
+    color: #999;
+}
+
+.opf-screen-detail .switch-container span {
+    display: block;
+    background: #fff;
+}
+
+.ui-dialog .stlm-repair-list .header,
+.ui-dialog .unrepair-amt .header {
+    line-height: 30px;
+    padding: 10px 18px;
+    @include borderDivide;
+}
+
+.ui-dialog .stlm-repair-list .header span,
+.ui-dialog .unrepair-amt .header span {
+    font-weight: bold;
+}
+
+.ui-dialog .stlm-repair-list .header td,
+.ui-dialog .unrepair-amt .header td {
+    font-weight: bold;
+}
+
+.ui-dialog .stlm-repair-list .body,
+.ui-dialog .unrepair-amt .body,
+.ui-dialog .stlm-error-list .body,
+.ui-dialog .err-amt-list .body,
+.ui-dialog .upper-amt .body {
+    margin-top: 3px;
+    border-top: 1px solid $headDevideColor;
+}
+
+.ui-dialog .foot {
+
+    border-top: 1px solid #d7d7d7;
+}
+
+.ui-dialog .foot span {
+    font-weight: bold;
+}
+
+
+.ui-dialog .stlm-error-list .header,
+.ui-dialog .err-amt-list .header {
+    @include borderDivide;
+}
+
+
+.ui-dialog .stlm-error-list .header td,
+.ui-dialog .err-amt-list .header td {
+    font-weight: bold;
+}
+
+
+/* 差错交易 详情 弹出窗口 */
+.repair-amt-dialog {
+    background: #fff;
+}
+
+/* 差错交易 详情 table */
+.repair-amt-detail {
+    .repairamt-oprtype {
+        width: 10%;
+    }
+    .repairamt-amt {
+        width: 20%;
+    }
+    .repairamt-oprtime {
+        width: 15%;
+    }
+    .repairamt-descr {
+        width: 55%;
+    }
+}
+.repair-amt-detail-pager {
+    text-align: center;
+}

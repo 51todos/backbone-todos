@@ -1,0 +1,14 @@
+[
+  {
+    "groupId": 1,
+    "mchtNo": "008370272300077",
+    "groupName": "测试",
+    "remark": "测试111"
+  },
+  {
+    "groupId": 2,
+    "mchtNo": "008370272300088",
+    "groupName": "测试2",
+    "remark": "测试222222"
+  }
+]

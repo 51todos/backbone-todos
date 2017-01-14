@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*显示浏览器升级提示时，在body加上一个类名showing-browser-updator*/
+/* line 2, ../sass/browser-updator.scss */
+body.showing-browser-updator #main-body {
+  position: relative;
+  top: 45px;
+}
+
+/* line 7, ../sass/browser-updator.scss */
+body.showing-browser-updator #browser-updator {
+  display: block;
+}
+
+/* line 11, ../sass/browser-updator.scss */
+#browser-updator {
+  color: #333;
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+/* line 19, ../sass/browser-updator.scss */
+.browser-updator-wrapper {
+  position: relative;
+  background-color: #F8EFB4;
+  height: 45px;
+  text-align: center;
+}
+
+/* line 25, ../sass/browser-updator.scss */
+.browser-updator-wrapper p {
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 30, ../sass/browser-updator.scss */
+.browser-updator-close {
+  top: 0;
+  right: 15px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+/* line 39, ../sass/browser-updator.scss */
+.browser-updator-close:hover {
+  text-decoration: none;
+}

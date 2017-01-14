@@ -1,0 +1,14 @@
+{
+    "settleAmt":113800,
+    "settleDate": 20140409,
+    "txAmt": 114000,
+    "feeAmt": 200,
+    "txCount": 600,
+    "terminalGroups": [{
+        "terminalNo":580001,
+        "settleAmt": 113800,
+        "txAmt": 114000,
+        "feeAmt": 200,
+        "txCount": 300
+    }]
+}

@@ -1,0 +1,168 @@
+/* normal */
+ul,li { margin:0;padding:0; list-style:none;}
+
+/* 集团商户 */
+.widget-header {
+    margin-top: 30px;
+}
+
+.widget-header h4 {
+    padding: 5px;
+    border-left: 5px solid #428BCA;
+}
+
+.btns-panel {
+    text-align: right;
+}
+
+.panel-body,
+.search-panel,
+.grid-panel,
+.config-panel,
+form[name^=gridForm] {
+    font-size: 14px;
+}
+
+.tab-view .page-view.container {
+    width: 100%;
+    padding: 0;
+}
+
+/* 分页 */
+.pager-container {
+    padding: 15px 0;
+}
+.pager-container li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 2px;
+}
+
+.grid-panel table tbody tr.selected,
+.grid-panel table tbody tr.selected:hover>td {
+    background-color: #E6F2FF !important;
+}
+.grid-header {
+    background-color: #EFEFEF !important;
+}
+
+.img-datepicker {
+    /*position: absolute;
+    bottom: 10px;
+    right: 24px;
+    top: auto;
+    cursor: pointer;*/
+    float: right;
+    margin-top: -24px;
+    margin-right: 8px;
+}
+
+.inline-block {
+    display: inline-block;
+    float: left;
+}
+
+.hidden-by-px {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -99999em;
+}
+
+.form-control-inline {
+    width:auto !important;
+    float: left;
+    margin-right: 8px;
+}
+
+/* validate */
+select.error,
+input.error {
+    border-color: #a94442;
+}
+label.error {
+    color: #a94442;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.grid-panel i[class^="icon-"],
+.search-panel i[class^="icon-"],
+.config-panel i[class^="icon-"]
+ {
+    font-size: 1.2em;
+}
+
+.region-search {
+    background-color: #F2F2F2;
+    margin-top: -20px;
+    padding: 15px 0;
+}
+
+.region-pagebody .help-label {
+    margin-top: 8px;
+}
+
+/* bootstrap */
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+    content: " ";
+    display: table;
+}
+
+/* components */
+.component-grid-stat .statDataMap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.components-toolbar {
+    float: right;
+}
+.components-toolbar > .btn-group,
+.components-toolbar > .btn {
+    margin-left: 8px;
+}
+
+.tabs {
+    width:100%;
+    height:auto;
+    margin: 10px 0 40px;
+    overflow:hidden;
+}
+.tabs li {
+    float: left;
+    border-bottom: 2px solid #CCC;
+    padding: 10px 15px;
+    margin-right: 2px;
+}
+.tabs li a { color: #CCC; }
+.tabs li a:hover,
+.tabs li.active a,
+.tabs li.active {
+    color: #333;
+    text-decoration: none;
+    border-bottom-color: #2077DA;
+}
+.tab-panel {
+    display: none;
+}
+.tab-panel.active {
+    display: block;
+}
+
+/* helper */
+.ui-tips {
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+.ui-tips-title {
+    padding-left: 10px;
+    border-left: 2px solid #428BCA;
+}
+.ui-tips-body li {
+    padding: 10px 0;
+}
+.ui-tips-body p {
+    font-size: 14px;
+    line-height: 1.2em;
+}

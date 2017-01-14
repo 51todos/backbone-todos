@@ -1,0 +1,44 @@
+{
+  "txCount": 1,
+  "mchtResv1": "null",
+  "totalAmt": "3600.00",
+  "totalFeeAmt": "12.60",
+  "totalFreeAmt": "0.00",
+  "pageBean": {
+    "content": [{
+      "amt": "3600.00",
+      "count": 1,
+      "date": "20140625",
+      "pageBean": {
+        "content": [{
+          "acBankNo": null,
+          "acNo": "622658******0271",
+          "date": "20140625",
+          "discCycle": "1",
+          "feeAmt": "12.60",
+          "freeAmt": null,
+          "id": "20140625000000000031",
+          "paymentMethod": "消费",
+          "settleAmt": "3587.40",
+          "settleNum": "TN00",
+          "terminalNo": "00110001",
+          "time": "073633",
+          "traceNo": "270973",
+          "txAmt": "3600.00",
+          "txName": "POS消费"
+        }],
+        "totalElements": 1
+      }
+    }],
+    "size": 3,
+    "number": 0,
+    "numberOfElements": 1,
+    "sort": null,
+    "lastPage": true,
+    "firstPage": true,
+    "totalPages": 1,
+    "totalElements": 1,
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

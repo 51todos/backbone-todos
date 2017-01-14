@@ -1,0 +1,1066 @@
+@charset "UTF-8";
+/*概要列表*/
+/* line 14, ../sass/opf-bill.scss */
+#bill-pane {
+  position: relative;
+}
+
+/* line 18, ../sass/opf-bill.scss */
+#bill-pane .bill-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  /* line 25, ../sass/opf-bill.scss */
+  #bill-pane .bill-container {
+    width: 100%;
+  }
+}
+/* line 30, ../sass/opf-bill.scss */
+#bill-pane .summary-list-wrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 34, ../sass/opf-bill.scss */
+#bill-pane .container:not(.page-view) {
+  width: 100%;
+}
+
+/* line 38, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table {
+  border: none !important;
+  width: 100%;
+}
+
+/* line 42, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table tbody {
+  border-bottom: 1px solid #E4E5E7;
+}
+
+/* line 45, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table .summary-thead:hover {
+  background-color: white !important;
+}
+
+/* line 48, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table thead {
+  background-color: #FFF;
+}
+
+/* line 51, ../sass/opf-bill.scss */
+#bill-pane .summary-table.opf-table thead th {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+/* line 55, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table th.date-col,
+#bill-pane .summary-list .summary-table td.date-col {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+/* line 60, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table-wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #E4E5E7;
+  margin-top: 35px;
+}
+
+/* line 67, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table td.text-right .icon {
+  color: #CFCFCF;
+  margin-left: 8px;
+}
+
+/*让右侧尖嘴能够定位该父亲*/
+/* line 72, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table tr td {
+  position: relative;
+}
+
+/*右侧尖嘴*/
+/* line 76, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table tr.active td:last-child {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+/* line 81, ../sass/opf-bill.scss */
+#bill-pane .summary-list .summary-table tr.active .td-arrow-inner {
+  position: relative;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 44px;
+  line-height: 44px;
+}
+
+/* line 88, ../sass/opf-bill.scss */
+.settle-date {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  /* line 93, ../sass/opf-bill.scss */
+  #bill-pane .summary-list .summary-table tr.active .td-arrow-inner:after {
+    border-bottom: 21px solid transparent;
+    border-left: 21px solid #ecf3f9;
+    border-right: 21px solid transparent;
+    border-top: 21px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    top: 1px;
+    right: auto;
+  }
+
+  /* line 105, ../sass/opf-bill.scss */
+  #bill-pane .summary-list .summary-table tr.active .td-arrow-inner:before {
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid #CFCFCF;
+    border-right: 22px solid transparent;
+    border-top: 22px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    right: auto;
+  }
+
+  /* line 117, ../sass/opf-bill.scss */
+  .settle-date {
+    padding-left: 5px;
+  }
+
+  /* line 120, ../sass/opf-bill.scss */
+  #bill-pane .summary-item .download-menu {
+    min-width: 125px !important;
+  }
+}
+/* line 124, ../sass/opf-bill.scss */
+#bill-pane .more-trigger {
+  display: block;
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #CFCFCF;
+  border-top: 0;
+}
+
+/* line 132, ../sass/opf-bill.scss */
+#bill-pane .more-trigger .icon {
+  margin-right: 6px;
+}
+
+/* line 136, ../sass/opf-bill.scss */
+#bill-pane .summary-list .td-ellipsis {
+  height: 60px;
+  line-height: 60px;
+}
+
+/* line 140, ../sass/opf-bill.scss */
+#bill-pane .summary-list .dot {
+  font-size: 18px;
+  color: #D8D8D8;
+  height: 14px;
+  line-height: 14px;
+}
+
+/*某天账单主要信息*/
+@media (min-width: 768px) {
+  /* line 150, ../sass/opf-bill.scss */
+  #bill-pane .opf-screen-detail {
+    padding-left: 26px;
+  }
+}
+/* line 154, ../sass/opf-bill.scss */
+#bill-pane .summary-item {
+  border-left: 1px solid #cfcfcf;
+}
+
+/* line 157, ../sass/opf-bill.scss */
+#bill-pane .summary-item .header,
+#bill-pane .txn-detail .header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 167, ../sass/opf-bill.scss */
+#bill-pane .summary-item .switch-record.disabled {
+  color: #999;
+}
+
+/* line 171, ../sass/opf-bill.scss */
+#bill-pane .summary-item table {
+  width: 100%;
+}
+
+/* line 174, ../sass/opf-bill.scss */
+#bill-pane .summary-item .termination-table {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 178, ../sass/opf-bill.scss */
+#bill-pane .summary-item .termination-table table {
+  border: none;
+  border-bottom: 1px solid #E4E5E7;
+}
+
+/* line 182, ../sass/opf-bill.scss */
+#bill-pane .summary-item .border-radius-small {
+  background: white !important;
+}
+
+/* line 186, ../sass/opf-bill.scss */
+#bill-pane .summary-item caption {
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  background-color: #F9F9F9;
+}
+
+/* line 191, ../sass/opf-bill.scss */
+#bill-pane .summary-item caption span {
+  display: block;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 5px;
+  width: 50%;
+}
+
+/* line 199, ../sass/opf-bill.scss */
+#bill-pane .summary-item table th.text-right,
+#bill-pane .summary-item table td.text-right {
+  padding-right: 0px;
+}
+
+/* line 203, ../sass/opf-bill.scss */
+#bill-pane .summary-item table th.text-left,
+#bill-pane .summary-item table td.text-left {
+  padding-left: 0px;
+}
+
+/* line 207, ../sass/opf-bill.scss */
+#bill-pane .summary-item .tn-tbody {
+  border-top: 1px solid #E4E5E7;
+}
+
+/* line 211, ../sass/opf-bill.scss */
+#bill-pane .summary-item .terminal-group {
+  margin-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px solid #E4E5E7;
+  border-bottom: 1px solid #E4E5E7;
+}
+
+/* line 218, ../sass/opf-bill.scss */
+#bill-pane .summary-item .terminal-group table {
+  border: none;
+}
+
+/* line 222, ../sass/opf-bill.scss */
+#bill-pane .summary-item table .icon {
+  color: #CFCFCF;
+  padding-left: 8px;
+}
+
+/* line 226, ../sass/opf-bill.scss */
+#bill-pane .summary-item .anchor {
+  display: block;
+  padding: 0 15px;
+  color: #333;
+}
+
+/* line 231, ../sass/opf-bill.scss */
+#bill-pane .summary-item .anchor span {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+/* line 236, ../sass/opf-bill.scss */
+#bill-pane .summary-item .download-menu {
+  top: 90% !important;
+  left: auto;
+  right: 5px !important;
+  min-width: 80px;
+}
+/* line 241, ../sass/opf-bill.scss */
+#bill-pane .summary-item .download-menu a:hover {
+  background-color: #0093DD !important;
+  color: #fff !important;
+}
+
+/* line 246, ../sass/opf-bill.scss */
+#bill-pane .summary-item .btn-download {
+  color: #0CBF9A;
+  border: 1px solid #0CBF9A;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+}
+
+/* line 255, ../sass/opf-bill.scss */
+#bill-pane .summary-item .btn-download:hover,
+#bill-pane .summary-item .btn-download:focus,
+#bill-pane .summary-item .btn-download:active,
+#bill-pane .summary-item .btn-download.active,
+#bill-pane .summary-item .open .dropdown-toggle.btn-download {
+  outline: none;
+  color: #fff;
+  background-color: #08D3A7;
+  border-color: #0AAA89;
+}
+
+/* line 265, ../sass/opf-bill.scss */
+#bill-pane .summary-item .btn-download .icon {
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+  font-size: 22px;
+}
+
+/* line 272, ../sass/opf-bill.scss */
+#bill-pane .summary-item span.iboxSn {
+  margin-left: 30px;
+}
+
+/* line 277, ../sass/opf-bill.scss */
+#bill-pane .opf-screen-detail .get-help {
+  position: absolute;
+  right: 15px;
+}
+
+/* line 281, ../sass/opf-bill.scss */
+#bill-pane .opf-screen-detail .opf-info-block {
+  box-shadow: 0px 1px 2px 0px #646464;
+}
+
+/* line 284, ../sass/opf-bill.scss */
+#bill-pane .resultDesc {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 289, ../sass/opf-bill.scss */
+  #bill-pane .opf-screen-detail .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 296, ../sass/opf-bill.scss */
+#bill-pane .txn-detail-wrap {
+  top: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #FFF;
+}
+
+/* line 305, ../sass/opf-bill.scss */
+#bill-pane .txn-detail-wrap table {
+  width: 100%;
+}
+
+/* line 309, ../sass/opf-bill.scss */
+#bill-pane .txn-detail .tno {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 313, ../sass/opf-bill.scss */
+.txn-detail .ac-no-col .innerwrap {
+  position: relative;
+  left: -10px;
+}
+
+/* line 317, ../sass/opf-bill.scss */
+.txn-detail .ac-no-col .innerwrap .text {
+  padding-left: 40px;
+}
+
+/* line 320, ../sass/opf-bill.scss */
+.txn-detail .ac-no-col img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+}
+
+/* line 328, ../sass/opf-bill.scss */
+.bill-adjust-history {
+  width: 100% !important;
+  min-width: 200px;
+}
+
+/* line 332, ../sass/opf-bill.scss */
+.fancybox-inner {
+  width: 100% !important;
+}
+
+/* line 335, ../sass/opf-bill.scss */
+.bill-adjust-history table {
+  width: 100%;
+}
+
+/* line 338, ../sass/opf-bill.scss */
+.separator {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #E4E5E7;
+  margin: 5px 0;
+}
+
+@media (max-width: 1199px) {
+  /* line 346, ../sass/opf-bill.scss */
+  .bill-container .bill-header {
+    margin: 0 5px;
+  }
+}
+/* line 351, ../sass/opf-bill.scss */
+.bill-container .bill-header {
+  position: relative;
+  height: 70px;
+  padding-bottom: 25px;
+  line-height: 44px;
+  text-align: center;
+}
+
+/* line 359, ../sass/opf-bill.scss */
+.bill-header .date-select {
+  float: left;
+}
+
+/* line 364, ../sass/opf-bill.scss */
+.bill-header .terminal-select {
+  position: relative;
+  float: left;
+  height: 45px;
+  margin: 0 0 0 10px;
+}
+
+/* line 371, ../sass/opf-bill.scss */
+.bill-header .terminal-select button {
+  position: absolute;
+  top: 0px;
+  height: 45px;
+}
+
+/* line 377, ../sass/opf-bill.scss */
+.bill-header .terminal-select .icon-caret-down {
+  color: #999;
+}
+
+/* line 382, ../sass/opf-bill.scss */
+.bill-header .bill-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  margin-left: -2em;
+}
+
+/* line 390, ../sass/opf-bill.scss */
+.bill-header .date-select {
+  height: 44px;
+}
+
+/* line 394, ../sass/opf-bill.scss */
+.bill-header .local-selection {
+  height: 44px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+/*
+/!* line 423, ../sass/opf-bill.scss *!/
+.bill-container .tx-count-container {
+  float: left;
+  width: 33%;
+  padding-left: 14%;
+  border-color: #6FB3E0;
+}
+
+/!* line 430, ../sass/opf-bill.scss *!/
+.bill-container .tx-count-container .tx-count {
+  line-height: 34px;
+  font-size: 28px;
+  color: #6FB3E0;
+}
+
+/!* line 436, ../sass/opf-bill.scss *!/
+.bill-container .tx-count-container .tx-count-text {
+  color: #666;
+}
+
+/!* line 440, ../sass/opf-bill.scss *!/
+.bill-container .total-amt-container {
+  float: left;
+  width: 33%;
+  padding-left: 10%;
+  border-color: #9ABD41;
+}
+
+/!* line 447, ../sass/opf-bill.scss *!/
+.bill-container .total-amt-container .total-amt {
+  line-height: 34px;
+  font-size: 28px;
+  color: #9ABD41;
+}
+
+/!* line 453, ../sass/opf-bill.scss *!/
+.bill-container .total-amt-container .total-amt-text {
+  color: #666;
+}
+
+/!* line 457, ../sass/opf-bill.scss *!/
+.bill-container .total-feeamt-container {
+  float: left;
+  width: 34%;
+  padding-left: 11%;
+  border-color: #C09853;
+}
+
+/!* line 464, ../sass/opf-bill.scss *!/
+.bill-container .total-feeamt-container .total-feeamt {
+  line-height: 34px;
+  font-size: 28px;
+  color: #C09853;
+}
+
+/!* line 470, ../sass/opf-bill.scss *!/
+.bill-container .total-feeamt-container .total-feeamt-text {
+  color: #666;
+}
+*/
+
+/* line 476, ../sass/opf-bill.scss */
+#bill-pane .bill-container .bill-no-data {
+  width: 160px;
+  height: 270px;
+  margin: 20% auto 0;
+}
+
+@media (max-width: 767px) {
+  /* line 483, ../sass/opf-bill.scss */
+  #bill-pane .bill-container .bill-no-data {
+    width: 100px;
+    margin: 10% auto 0;
+  }
+}
+/* line 489, ../sass/opf-bill.scss */
+#bill-pane .bill-no-data .opf-icon-search {
+  display: block;
+  width: 142px;
+  height: 190px;
+  font-size: 64px;
+  color: #ccc;
+  padding: 38% 25%;
+  border: 2px dashed #ccc;
+  margin: 0 auto 32px;
+}
+
+@media (max-width: 767px) {
+  /* line 501, ../sass/opf-bill.scss */
+  #bill-pane .bill-no-data .opf-icon-search {
+    width: 100px;
+    height: 120px;
+    font-size: 48px;
+    margin: 0 auto 10%;
+  }
+}
+/* line 510, ../sass/opf-bill.scss */
+#bill-pane .bill-no-data .info-container {
+  position: relative;
+  text-align: center;
+}
+
+/* line 515, ../sass/opf-bill.scss */
+#bill-pane .bill-no-data .main-info {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+/* line 521, ../sass/opf-bill.scss */
+#bill-pane .bill-no-data .suggest-info {
+  display: inline-block;
+  position: relative;
+  width: 315px;
+  left: 50%;
+  margin-left: -158px;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 531, ../sass/opf-bill.scss */
+  #bill-pane .bill-no-data .suggest-info {
+    position: absolute;
+    bottom: -18px;
+  }
+}
+
+/*
+@media (max-width: 767px) {
+  /!* line 539, ../sass/opf-bill.scss *!/
+  .bill-container .tx-count-container,
+  .bill-container .total-amt-container,
+  .bill-container .total-feeamt-container {
+    padding-left: 7%;
+  }
+
+  /!* line 545, ../sass/opf-bill.scss *!/
+  .bill-container .tx-count-container .tx-count,
+  .bill-container .total-amt-container .total-amt,
+  .bill-container .total-feeamt-container .total-feeamt {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/!* line 553, ../sass/opf-bill.scss *!/
+.bill-container .eachday-table .text-left {
+  padding-left: 24px;
+}
+
+/!* line 557, ../sass/opf-bill.scss *!/
+.bill-container .eachday-table .text-right {
+  padding-right: 24px;
+}
+*/
+
+/* line 561, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot .info-container {
+  border-top: 1px solid #aaa;
+  height: 61px;
+  line-height: 61px;
+}
+
+/* line 567, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot .day-sumup {
+  float: left;
+  padding-left: 17px;
+}
+
+@media (max-width: 767px) {
+  /* line 573, ../sass/opf-bill.scss */
+  .bill-container .eachday-table tfoot .day-sumup {
+    display: none;
+  }
+}
+/* line 578, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot .count {
+  color: #6fb3e0;
+}
+
+/* line 582, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot .amt {
+  color: #9abc5c;
+}
+
+/* line 586, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot .pager-container {
+  display: inline-block;
+}
+
+@media (max-width: 540px) {
+  /* line 592, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .text-left {
+    padding-left: 6px;
+    padding-right: 0px;
+  }
+
+  /* line 597, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .text-right {
+    padding-right: 6px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 604, ../sass/opf-bill.scss */
+  .bill-container .total-amt-container {
+    padding-left: 0px;
+  }
+}
+/* line 609, ../sass/opf-bill.scss */
+.bill-container .eachday-table table {
+  width: 100%;
+  margin-bottom: 0px;
+  border: none;
+}
+
+/* line 615, ../sass/opf-bill.scss */
+.bill-container .eachday-table thead {
+  background: #EFF3F8;
+  border-top: 1px solid #ddd;
+}
+
+/* line 621, ../sass/opf-bill.scss */
+.bill-container .eachday-table thead tr:hover {
+  background: #EFF3F8;
+}
+/* line 625, ../sass/opf-bill.scss */
+.bill-container .eachday-table thead tr:active {
+  background: #EFF3F8;
+}
+
+/* line 631, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot tr:hover {
+  background: #FFF;
+}
+/* line 635, ../sass/opf-bill.scss */
+.bill-container .eachday-table tfoot tr:active {
+  background: #FFF;
+}
+
+/* line 641, ../sass/opf-bill.scss */
+.bill-container .eachday-table th {
+  padding: 10px 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #999;
+}
+
+/* line 647, ../sass/opf-bill.scss */
+.bill-container .eachday-table .trans-date div {
+  padding-left: 6px;
+}
+
+/* line 651, ../sass/opf-bill.scss */
+.bill-container .eachday-table .settle-amt-sum div {
+  padding-right: 6px;
+}
+
+/* line 655, ../sass/opf-bill.scss */
+.bill-container .eachday-table .timeSortRow div {
+  height: 44px;
+  line-height: 44px;
+}
+
+/* line 662, ../sass/opf-bill.scss */
+.bill-container .eachday-table th {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 666, ../sass/opf-bill.scss */
+.bill-container .eachday-table th:last-child,
+.bill-container .eachday-table td:last-child {
+  text-align: right;
+}
+
+/* line 671, ../sass/opf-bill.scss */
+.bill-container .eachday-table td .tx-name {
+  margin-left: 3em;
+}
+
+/* line 675, ../sass/opf-bill.scss */
+.bill-container .eachday-table .time-col {
+  width: 16%;
+}
+
+/* line 679, ../sass/opf-bill.scss */
+.bill-container .eachday-table .trace-no-col {
+  width: 16%;
+}
+
+/* line 683, ../sass/opf-bill.scss */
+.bill-container .eachday-table .trade-type-col {
+  width: 16%;
+}
+
+/* line 687, ../sass/opf-bill.scss */
+.bill-container .eachday-table .feeamt-col {
+  width: 16%;
+  color: #d8a153;
+}
+
+/* line 692, ../sass/opf-bill.scss */
+.bill-container .eachday-table .settleamt-col {
+  width: 16%;
+}
+
+/* line 697, ../sass/opf-bill.scss */
+.bill-container .eachday-table .txamt-col {
+  width: 16%;
+}
+/* line 699, ../sass/opf-bill.scss */
+.bill-container .eachday-table .txamt-col div {
+  color: #468847;
+}
+
+@media (max-width: 767px) {
+  /* line 705, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .time-col {
+    width: 25%;
+  }
+
+  /* line 709, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .trace-no-col {
+    width: 0;
+    padding: 0;
+  }
+  /* line 712, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .trace-no-col div {
+    display: none;
+    width: 0px;
+  }
+
+  /* line 718, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .trade-type-col {
+    width: 0;
+    padding: 0;
+  }
+  /* line 721, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .trade-type-col div {
+    display: none;
+    width: 0px;
+  }
+
+  /* line 728, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .feeamt-col {
+    width: 25%;
+  }
+
+  /* line 732, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .settleamt-col {
+    width: 25%;
+  }
+
+  /* line 737, ../sass/opf-bill.scss */
+  .bill-container .eachday-table .txamt-col {
+    width: 25%;
+  }
+}
+/* line 745, ../sass/opf-bill.scss */
+.bill-container .pager-container {
+  margin: 13px 17px 13px 0px;
+}
+
+/* line 750, ../sass/opf-bill.scss */
+.bill-container .pager-container a {
+  float: none;
+}
+
+/* line 754, ../sass/opf-bill.scss */
+.bill-container .eachday-table .settle-amt-sum {
+  text-align: right;
+}
+
+/* line 758, ../sass/opf-bill.scss */
+.bill-container .download-menu {
+  top: 28px;
+}
+
+/* line 762, ../sass/opf-bill.scss */
+.bill-details-container .opf-table td:last-child {
+  text-align: right;
+}
+
+/* line 765, ../sass/opf-bill.scss */
+.bill-details-container .opf-table th:last-child {
+  text-align: right;
+}
+
+/* line 769, ../sass/opf-bill.scss */
+.days-bill .pager {
+  margin: 0 0;
+  line-height: 35px;
+}
+
+/* line 774, ../sass/opf-bill.scss */
+.days-bill .pager ul {
+  overflow: hidden;
+  padding-left: 0px;
+}
+
+/* line 779, ../sass/opf-bill.scss */
+.days-bill .pager li {
+  float: left;
+}
+
+/* line 784, ../sass/opf-bill.scss */
+.days-bill .pager li > a {
+  padding: 5px 10px;
+  line-height: normal;
+  border-radius: 0px;
+  background-color: #fafafa;
+  border-left: none;
+}
+
+/* line 792, ../sass/opf-bill.scss */
+.days-bill .pager .active {
+  background-color: #6caddb;
+  border: 1px solid #6caddb;
+  color: #fff;
+}
+
+/* line 798, ../sass/opf-bill.scss */
+.days-bill .pager .previous a,
+.days-bill .pager .next a {
+  padding: 5px 10px 6px;
+}
+
+/* line 803, ../sass/opf-bill.scss */
+.days-bill .pager .previous a {
+  border-left: 1px solid #ddd;
+}
+
+/* line 811, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel {
+  position: absolute;
+  width: 160px;
+  z-index: 1;
+  background: #fff;
+  margin-left: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* line 821, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .toggle-item {
+  position: relative;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* line 830, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .toggle-item .innerwrap {
+  position: relative;
+  height: 30px;
+}
+
+/* line 835, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .toggle-item .text {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 844, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .toggle-item .arrow {
+  position: absolute;
+  color: #999;
+  right: 0;
+  top: 7px;
+}
+
+/* line 852, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .all-item {
+  cursor: pointer;
+}
+
+/* line 856, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel ul {
+  background: #fff;
+  width: 100%;
+  margin: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 866, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel ul li {
+  list-style: none;
+  padding: 6px 12px;
+}
+
+/* line 871, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .tn-search-input {
+  width: 100%;
+}
+
+/* line 875, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .all-item,
+.bill-container .remote-tn-sel .input-item {
+  border-top: 1px solid #ccc;
+}
+
+/* line 879, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .select2-container .select2-arrow {
+  display: none !important;
+}
+
+/* line 882, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .select2-container .select2-choice > .select2-chosen {
+  margin-right: 0;
+}
+
+/* line 885, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .select2-container .select2-choice {
+  border-radius: 0 !important;
+}
+
+/* line 888, ../sass/opf-bill.scss */
+.bill-container .remote-tn-sel .select2-container .select2-results .select2-no-results {
+  font-size: 15px;
+}
+
+/* line 894, ../sass/opf-bill.scss */
+.bill-container .foot {
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  bottom: 0;
+  height: 44px;
+}
+
+/* line 902, ../sass/opf-bill.scss */
+.bill-container .days-bill {
+  padding-bottom: 44px;
+}
+
+/* line 913, ../sass/opf-bill.scss */
+.ui-dialog .bill-details-container .header {
+  line-height: 30px;
+  border-top: 1px solid #E68A8A;
+  border-bottom: 1px solid #E68A8A;
+}
+
+/* line 918, ../sass/opf-bill.scss */
+.ui-dialog .bill-details-container .header td {
+  font-weight: bold;
+}
+
+/* line 922, ../sass/opf-bill.scss */
+.ui-dialog .bill-details-container .body {
+  margin-top: 3px;
+  border-top: 1px solid #E68A8A;
+}
+
+/* line 928, ../sass/opf-bill.scss */
+.txt-download-date-dialog {
+  background: #fff;
+}
+
+/* line 932, ../sass/opf-bill.scss */
+.txt-download-date-dialog input.reset {
+  margin: 0 5px 0 10px;
+}

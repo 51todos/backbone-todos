@@ -1,0 +1,16 @@
+/* line 1, ../sass/opf-terminals.scss */
+.col-sm-12 {
+  position: relative;
+}
+
+/* line 5, ../sass/opf-terminals.scss */
+.col-sm-12 .opf-table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 10, ../sass/opf-terminals.scss */
+.col-sm-12 .opf-table th,
+.col-sm-12 .opf-table td {
+  padding: 0 15px;
+}

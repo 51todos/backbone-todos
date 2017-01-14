@@ -1,0 +1,934 @@
+@charset "UTF-8";
+@import "compass/css3/border-radius";
+$tableBorderColor: #E4E5E7;
+$fontUnitSize: 16px;
+$fontColorLight: #666;
+$headDevideColor : #E68A8A;
+
+@mixin borderDivide {
+    border-top: 1px solid $headDevideColor;
+    border-bottom: 1px solid $headDevideColor;
+}
+
+/*概要列表*/
+#bill-pane {
+    position: relative;
+}
+
+#bill-pane .bill-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+@media (max-width: 767px) {
+    #bill-pane .bill-container {
+        width: 100%;
+    }
+}
+
+ #bill-pane .summary-list-wrap {
+    padding-left: 0;
+    padding-right: 0;
+}
+#bill-pane .container {
+    width: 100%;
+}
+
+#bill-pane .summary-list .summary-table {
+    border: none !important;
+    width: 100%;
+}
+#bill-pane .summary-list .summary-table tbody{
+    border-bottom: 1px solid $tableBorderColor;
+}
+#bill-pane .summary-list .summary-table .summary-thead:hover{
+    background-color:white!important;
+}
+#bill-pane .summary-list .summary-table thead {
+    background-color: #FFF;
+}
+#bill-pane .summary-table.opf-table thead th{
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+#bill-pane .summary-list .summary-table th.date-col, 
+#bill-pane .summary-list .summary-table td.date-col {
+    padding-left: 15px;
+    padding-right: 0;
+}
+#bill-pane .summary-list .summary-table-wrap{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid $tableBorderColor;
+    margin-top: 35px;
+}
+
+#bill-pane .summary-list .summary-table td.text-right .icon {
+    color: #CFCFCF;
+    margin-left: 8px;
+}
+/*让右侧尖嘴能够定位该父亲*/
+ #bill-pane .summary-list .summary-table tr td {
+    position: relative;
+}
+/*右侧尖嘴*/
+#bill-pane .summary-list .summary-table tr.active td:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+#bill-pane .summary-list .summary-table tr.active .td-arrow-inner {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 44px;
+    line-height: 44px;
+}
+.settle-date{
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    #bill-pane .summary-list .summary-table tr.active .td-arrow-inner:after {
+        border-bottom: 21px solid transparent;
+        border-left: 21px solid #ecf3f9;
+        border-right: 21px solid transparent;
+        border-top: 21px solid transparent;
+        content:"";
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+        top: 1px;
+        right: auto;
+    }
+    #bill-pane .summary-list .summary-table tr.active .td-arrow-inner:before {
+        border-bottom: 22px solid transparent;
+        border-left: 22px solid #CFCFCF;
+        border-right: 22px solid transparent;
+        border-top: 22px solid transparent;
+        content:"";
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        right: auto;
+    }
+    .settle-date{
+        padding-left: 5px;
+    }
+    #bill-pane .summary-item .download-menu{
+        min-width: 125px!important;
+    }
+}
+#bill-pane .more-trigger {
+    display: block;
+    cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #CFCFCF;
+    border-top: 0;
+}
+#bill-pane .more-trigger .icon {
+    margin-right: 6px;
+}
+
+#bill-pane .summary-list .td-ellipsis {
+    height: 60px;
+    line-height: 60px;
+}
+#bill-pane .summary-list .dot {
+    font-size: 18px;
+    color: #D8D8D8;
+    height: 14px;
+    line-height: 14px;
+}
+
+
+/*某天账单主要信息*/
+@media (min-width: 768px) {
+    #bill-pane .opf-screen-detail {
+        padding-left: 26px;
+    }
+}
+#bill-pane .summary-item {
+    border-left: 1px solid #cfcfcf;
+}
+#bill-pane .summary-item .header,
+#bill-pane .txn-detail .header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+#bill-pane .summary-item .switch-record.disabled {
+    color: #999;
+}
+
+#bill-pane .summary-item table {
+    width: 100%;
+}
+#bill-pane .summary-item .termination-table{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#bill-pane .summary-item .termination-table table{
+    border: none;
+    border-bottom: 1px solid $tableBorderColor;
+}
+#bill-pane .summary-item .border-radius-small{
+    background: white!important;
+}
+
+#bill-pane .summary-item caption {
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    background-color: #F9F9F9;
+}
+#bill-pane .summary-item caption span {
+    display: block;
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 5px;
+    width: 50%;
+}
+#bill-pane .summary-item table th.text-right,
+#bill-pane .summary-item table td.text-right {
+    padding-right: 0px;
+}
+#bill-pane .summary-item table th.text-left,
+#bill-pane .summary-item table td.text-left {
+    padding-left: 0px;
+}
+#bill-pane .summary-item .tn-tbody {
+    border-top: 1px solid $tableBorderColor;
+}
+
+#bill-pane .summary-item .terminal-group {
+    margin-top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid $tableBorderColor;
+    border-bottom: 1px solid $tableBorderColor;
+}
+#bill-pane .summary-item .terminal-group table{
+    border: none;
+}
+
+#bill-pane .summary-item table .icon {
+    color: #CFCFCF;
+    padding-left: 8px;
+}
+#bill-pane .summary-item .anchor {
+    display: block;
+    padding: 0 15px;
+    color: #333;
+}
+#bill-pane .summary-item .anchor span {
+    display: block;
+    width: 50%;
+    float: left;
+}
+#bill-pane .summary-item .download-menu{
+  top:90%!important;
+  left: auto;
+  right: 5px!important;
+  min-width: 80px;
+  a:hover{
+    background-color:#0093DD!important;
+    color: #fff!important;
+  }
+}
+#bill-pane .summary-item .btn-download {
+    color: #0CBF9A;
+    border:1px solid #0CBF9A;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+}
+#bill-pane .summary-item .btn-download:hover, 
+#bill-pane .summary-item .btn-download:focus, 
+#bill-pane .summary-item .btn-download:active, 
+#bill-pane .summary-item .btn-download.active, 
+#bill-pane .summary-item .open .dropdown-toggle.btn-download {
+    outline: none;
+    color: #fff;
+    background-color: #08D3A7;
+    border-color: #0AAA89;
+}
+#bill-pane .summary-item .btn-download .icon {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+    font-size: 22px;
+}
+
+#bill-pane .summary-item span.iboxSn {
+    margin-left: 30px;
+}
+
+
+#bill-pane .opf-screen-detail .get-help{
+    position: absolute;
+    right: 15px;
+}
+#bill-pane .opf-screen-detail .opf-info-block{
+    box-shadow: 0px 1px 2px 0px rgb(100,100,100);
+}
+#bill-pane .resultDesc{
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+    #bill-pane .opf-screen-detail .content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+//终端交易明细
+#bill-pane .txn-detail-wrap {
+    top: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: #FFF;
+}
+
+#bill-pane .txn-detail-wrap table {
+    width: 100%;
+}
+
+#bill-pane .txn-detail .tno{
+    font-size: 20px;
+    font-weight: bold;
+}
+.txn-detail .ac-no-col .innerwrap {
+    position: relative;
+    left: -10px;
+}
+.txn-detail .ac-no-col .innerwrap .text {
+    padding-left: 40px;
+}
+.txn-detail .ac-no-col img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+}
+
+// 查看调账历史
+.bill-adjust-history {
+    width: 100%!important;
+    min-width: 200px;
+}
+.fancybox-inner{
+    width: 100%!important;
+}
+.bill-adjust-history table {
+    width: 100%;
+}
+.separator {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid $tableBorderColor;
+    margin: 5px 0;
+}
+
+@media (max-width: 1199px) {
+    .bill-container .bill-header {
+        margin: 0 5px;
+    }
+}
+
+.bill-container .bill-header {
+    position: relative;
+    height: 70px;
+    padding-bottom: 25px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.bill-header .date-select {
+    float: left;
+}
+
+
+.bill-header .terminal-select {
+    position: relative;
+    float: left;
+    height: 45px;
+    margin: 0 0 0 10px;
+}
+
+.bill-header .terminal-select button {
+    position: absolute;
+    top: 0px;
+    height: 45px;
+}
+
+.bill-header .terminal-select .icon-caret-down {
+    color: #999;
+}
+
+
+.bill-header .bill-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    margin-left: -2em;
+}
+
+.bill-header .date-select {
+    height: 44px;
+}
+
+.bill-header .local-selection {
+    height: 44px;
+    padding-left: 10px;
+    border-radius: 4px;
+
+}
+
+.bill-header .btn-download {
+    height: 44px;
+    color: #0CBF9A;
+    border: 1px solid #0CBF9A;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bill-header .btn-download:hover {
+    color: #fff;
+    background: #04D2A4;
+}
+
+.bill-header .btn-download i {
+    position: relative;
+    top: 1px;
+    padding-right: 4px;
+    font-size: 19px;
+}
+
+
+.bill-container .tx-count-container {
+    float: left;
+    width: 33%;
+    padding-left: 14%;
+    border-color: #6FB3E0;
+}
+
+.bill-container .tx-count-container .tx-count {
+    line-height: 34px;
+    font-size: 28px;
+    color: #6FB3E0;
+}
+
+.bill-container .tx-count-container .tx-count-text {
+    color: #666;
+}
+
+.bill-container .total-amt-container {
+    float: left;
+    width: 33%;
+    padding-left: 10%;
+    border-color: #9ABD41;
+}
+
+.bill-container .total-amt-container .total-amt {
+    line-height: 34px;
+    font-size: 28px;
+    color: #9ABD41;
+}
+
+.bill-container .total-amt-container .total-amt-text {
+    color: #666;
+}
+
+.bill-container .total-feeamt-container {
+    float: left;
+    width: 34%;
+    padding-left: 11%;
+    border-color: #C09853;
+}
+
+.bill-container .total-feeamt-container .total-feeamt {
+    line-height: 34px;
+    font-size: 28px;
+    color: #C09853;
+}
+
+.bill-container .total-feeamt-container .total-feeamt-text {
+    color: #666;
+}
+
+
+//没有数据时的显示样式
+#bill-pane .bill-container .bill-no-data {
+    width: 160px;
+    height: 270px;
+    margin: 20% auto 0;
+}
+
+@media (max-width: 767px) {
+    #bill-pane .bill-container .bill-no-data {
+        width: 100px;
+        margin: 10% auto 0;
+    }
+}
+
+#bill-pane  .bill-no-data .opf-icon-search {
+    display: block;
+    width: 142px;
+    height: 190px;
+    font-size: 64px;
+    color: #ccc;
+    padding: 38% 25%;
+    border: 2px dashed #ccc;
+    margin: 0 auto 32px;
+}
+
+@media (max-width: 767px) {
+    #bill-pane  .bill-no-data .opf-icon-search {
+        width: 100px;
+        height: 120px;
+        font-size: 48px;
+        margin: 0 auto 10%;
+    }
+}
+
+
+#bill-pane  .bill-no-data .info-container {
+    position: relative;
+    text-align: center;
+}
+
+#bill-pane  .bill-no-data .main-info {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+#bill-pane  .bill-no-data .suggest-info {
+    display: inline-block;
+    position: relative;
+    width: 315px;
+    left: 50%;
+    margin-left: -158px;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    #bill-pane  .bill-no-data .suggest-info {
+        position: absolute;
+        bottom: -18px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .bill-container .tx-count-container,
+    .bill-container .total-amt-container,
+    .bill-container .total-feeamt-container {
+        padding-left: 7%;
+    }
+
+    .bill-container .tx-count-container .tx-count,
+    .bill-container .total-amt-container .total-amt,
+    .bill-container .total-feeamt-container .total-feeamt {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.bill-container .eachday-table .text-left {
+    padding-left: 24px;
+}
+
+.bill-container .eachday-table .text-right {
+    padding-right: 24px;
+}
+
+.bill-container .eachday-table tfoot .info-container {
+    border-top: 1px solid #aaa;
+    height: 61px;
+    line-height: 61px;
+}
+
+.bill-container .eachday-table tfoot .day-sumup {
+    float: left;
+    padding-left: 17px;
+}
+
+@media (max-width: 767px) {
+    .bill-container .eachday-table tfoot .day-sumup {
+        display: none;
+    }
+}
+
+.bill-container .eachday-table tfoot .count {
+    color:#6fb3e0;
+}
+
+.bill-container .eachday-table tfoot .amt {
+    color:#9abc5c;
+}
+
+.bill-container .eachday-table tfoot .pager-container {
+    display: inline-block;
+}
+
+@media (max-width: 540px) {
+
+    .bill-container .eachday-table .text-left {
+        padding-left: 6px;
+        padding-right: 0px;
+    }
+
+    .bill-container .eachday-table .text-right {
+        padding-right: 6px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bill-container .total-amt-container {
+        padding-left: 0px;
+    }
+}
+
+.bill-container .eachday-table table {
+    width: 100%;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.bill-container .eachday-table thead {
+    background: #EFF3F8;
+    border-top: 1px solid #ddd;
+}
+
+.bill-container .eachday-table thead {
+    & tr:hover {
+        background: #EFF3F8;
+    }
+
+    & tr:active {
+        background: #EFF3F8;
+    }
+}
+
+.bill-container .eachday-table tfoot {
+    & tr:hover {
+        background: #FFF;
+    }
+
+    & tr:active {
+        background: #FFF;
+    }
+}
+
+
+.bill-container .eachday-table th {
+    padding: 0 18px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.bill-container .eachday-table .trans-date div {
+    padding-left: 6px;
+}
+
+.bill-container .eachday-table .settle-amt-sum div {
+    padding-right: 6px;
+}
+
+.bill-container .eachday-table .timeSortRow div {
+    height: 44px;
+    line-height: 44px;
+}
+
+
+
+.bill-container .eachday-table th {
+    border-bottom: 1px solid #ddd;
+}
+
+.bill-container .eachday-table th:last-child,
+.bill-container .eachday-table td:last-child {
+    text-align: right;
+}
+
+.bill-container .eachday-table td .tx-name {
+    margin-left: 3em;
+}
+
+.bill-container .eachday-table .time-col {
+    width: 16%;
+}
+
+.bill-container .eachday-table .trace-no-col {
+    width: 16%;
+}
+
+.bill-container .eachday-table .trade-type-col {
+    width: 16%;
+}
+
+.bill-container .eachday-table .feeamt-col {
+    width: 16%;
+    color: #d8a153;
+}
+
+.bill-container .eachday-table .settleamt-col {
+    width: 16%;
+}
+
+
+.bill-container .eachday-table .txamt-col {
+    width: 16%;
+    div {
+        color: #468847;
+    }
+}
+
+@media (max-width: 767px) {
+    .bill-container .eachday-table .time-col {
+        width: 25%;
+    }
+
+    .bill-container .eachday-table .trace-no-col {
+        width: 0;
+        padding: 0;
+        div {
+            display: none;
+            width: 0px;
+        }
+    }
+
+    .bill-container .eachday-table .trade-type-col {
+        width: 0;
+        padding: 0;
+        div {
+            display: none;
+            width: 0px;
+        }
+
+    }
+
+    .bill-container .eachday-table .feeamt-col {
+        width: 25%;
+    }
+
+    .bill-container .eachday-table .settleamt-col {
+        width: 25%;
+    }
+
+
+    .bill-container .eachday-table .txamt-col {
+        width: 25%;
+    }
+
+
+}
+
+
+.bill-container .pager-container {
+    margin: 13px 17px 13px 0px;
+}
+
+
+.bill-container .pager-container a {
+    float: none;
+}
+
+.bill-container .eachday-table .settle-amt-sum {
+    text-align: right;
+}
+
+.bill-container .download-menu {
+    top: 28px;
+}
+
+.bill-details-container .opf-table td:last-child {
+    text-align: right;
+}
+.bill-details-container .opf-table th:last-child {
+    text-align: right;
+}
+
+.days-bill .pager {
+    margin: 0 0;
+    line-height: 35px;
+}
+
+.days-bill .pager ul {
+    overflow: hidden;
+    padding-left: 0px;
+}
+
+.days-bill .pager li {
+    float: left;
+}
+
+
+.days-bill .pager li > a {
+    padding: 5px 10px;
+    line-height: normal;
+    border-radius: 0px;
+    background-color: #fafafa;
+    border-left: none;
+}
+
+.days-bill .pager .active {
+    background-color: #6caddb;
+    border: 1px solid #6caddb;
+    color: #fff;
+}
+
+.days-bill .pager .previous a,
+.days-bill .pager .next a {
+    padding: 5px 10px 6px;
+}
+
+.days-bill .pager .previous a {
+    border-left: 1px solid #ddd;
+}
+
+
+
+
+// 模糊搜索终端组件
+.bill-container .remote-tn-sel{
+    position: absolute; 
+    width: 160px;
+    z-index: 1;
+    background: #fff;
+    margin-left: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}  
+.bill-container .remote-tn-sel .toggle-item{
+    position: relative;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: left;
+}
+.bill-container .remote-tn-sel .toggle-item .innerwrap {
+    position: relative;
+    height: 30px;
+}
+
+.bill-container .remote-tn-sel .toggle-item .text{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bill-container .remote-tn-sel .toggle-item .arrow{
+    position: absolute;
+    color: #999;
+    right: 0;
+    top: 7px;
+}
+
+
+.bill-container .remote-tn-sel .all-item {
+    cursor: pointer;
+}
+
+.bill-container .remote-tn-sel ul  {
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    min-height: 44px;
+    margin:0;
+    padding:0;
+    overflow: hidden
+}
+
+.bill-container .remote-tn-sel ul li {
+    list-style: none;
+    padding: 6px 12px;
+}
+
+.bill-container .remote-tn-sel .tn-search-input{
+    width: 100%;
+}
+
+.bill-container .remote-tn-sel .all-item ,
+.bill-container .remote-tn-sel .input-item {
+    border-top: 1px solid #ccc;
+}
+.bill-container .remote-tn-sel .select2-container .select2-arrow {
+    display: none!important;
+}
+.bill-container .remote-tn-sel .select2-container .select2-choice > .select2-chosen {
+    margin-right: 0;
+}
+.bill-container .remote-tn-sel .select2-container .select2-choice {
+    border-radius: 0!important;
+}
+.bill-container .remote-tn-sel .select2-container .select2-results .select2-no-results{
+    font-size: 15px;
+}
+
+//分页栏
+$pagerHeight: 44px;
+.bill-container .foot {
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    bottom: 0;
+    height: $pagerHeight;
+
+}
+.bill-container .days-bill {
+    padding-bottom: $pagerHeight;
+}
+
+
+.bill-container .pager .previous a ,
+.bill-container .pager .next a {
+
+}
+
+
+.ui-dialog .bill-details-container .header {
+    line-height: 30px;
+    @include borderDivide;
+}
+
+.ui-dialog .bill-details-container .header td {
+    font-weight: bold;
+}
+
+.ui-dialog .bill-details-container .body {
+    margin-top: 3px;
+    border-top: 1px solid $headDevideColor;
+}
+
+
+.txt-download-date-dialog {
+    background: #fff;
+}
+
+.txt-download-date-dialog input.reset {
+    margin: 0 5px 0 10px;
+}

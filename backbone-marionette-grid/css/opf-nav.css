@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* line 1, ../sass/opf-nav.scss */
+#logo-img {
+  position: relative;
+  top: 8px;
+  left: 1px;
+  margin-left: 10px;
+  width: 35px;
+  height: 23px;
+}
+
+/*最上面的导航栏*/
+/* line 11, ../sass/opf-nav.scss */
+#navbar {
+  margin-bottom: 0px;
+  min-height: 45px;
+  position: relative;
+  background: #438EB9;
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  box-shadow: 0px 2px 2px 0px rgba(115, 115, 115, 0.5);
+  position: relative;
+  z-index: 100;
+}
+
+/*logo*/
+/* line 24, ../sass/opf-nav.scss */
+#navbar .navbar-brand {
+  line-height: auto !important;
+  height: auto !important;
+  color: #fff;
+  text-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* line 34, ../sass/opf-nav.scss */
+#navbar .nav > li {
+  white-space: nowrap;
+  /*    max-width: 33%;IEhover到tab上布局会很奇怪*/
+  height: 45px;
+  line-height: 45px;
+}
+
+/* line 40, ../sass/opf-nav.scss */
+#navbar .nav > li > a {
+  color: #FFF;
+}
+
+/* line 44, ../sass/opf-nav.scss */
+#user-nav {
+  float: right;
+}
+
+/* line 48, ../sass/opf-nav.scss */
+#user-nav > li > a {
+  padding: 0 8px;
+}
+
+/* line 55, ../sass/opf-nav.scss */
+#user-nav .open > a,
+#ser-nav .open > a:hover,
+#user-av .open > a:focus,
+#user-nav > li > a:hover,
+#user-nav > li > a:focus {
+  background-color: transparent !important;
+}
+
+/*下载任务 提示容器*/
+/* line 60, ../sass/opf-nav.scss */
+#navbar .task-box {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #62a8d1;
+}
+
+/* line 69, ../sass/opf-nav.scss */
+#navbar .task-box a {
+  display: block;
+  height: 45px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #62a8d1;
+}
+
+/* line 77, ../sass/opf-nav.scss */
+#navbar .task-box a i {
+  position: absolute;
+  left: 13px;
+  top: 15px;
+}
+
+/* line 83, ../sass/opf-nav.scss */
+#navbar .task-box a span {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+
+/* 下载任务 下拉列表 */
+/* line 91, ../sass/opf-nav.scss */
+#navbar .task-box .dropdown-navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 190px;
+}
+
+/* line 97, ../sass/opf-nav.scss */
+#navbar .task-box .dropdown-navbar > li.dropdown-header {
+  background-color: #ecf2f7 !important;
+  color: #8090a0;
+  text-shadow: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 34px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: none;
+  border-bottom: 1px solid #bcd4e5;
+}
+
+/* line 110, ../sass/opf-nav.scss */
+#navbar .task-box .dropdown-navbar > li {
+  padding: 0 8px;
+}
+
+/* line 115, ../sass/opf-nav.scss */
+#navbar .task-box .dropdown-header {
+  display: block;
+}
+
+/* line 120, ../sass/opf-nav.scss */
+#navbar .task-box .task-queue-table-sit {
+  padding: 0 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+/* line 126, ../sass/opf-nav.scss */
+#navbar .task-box table.task-queue-table tr {
+  border-bottom: 1px solid #e4ecf3;
+}
+
+/*用户名 & 菜单trigger*/
+/* line 133, ../sass/opf-nav.scss */
+#navbar .username {
+  max-width: 100px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: top;
+  position: relative;
+}
+
+/*@功能tab*/
+/* line 145, ../sass/opf-nav.scss */
+#main-nav-header .nav {
+  border-bottom: 0;
+  margin-right: 20px;
+}
+
+/* line 149, ../sass/opf-nav.scss */
+#main-nav-header .nav li > a {
+  padding: 0 20px;
+  border-radius: 0;
+}
+
+/* line 155, ../sass/opf-nav.scss */
+#main-nav-header .nav li.active > a:hover,
+#main-nav-header .nav li.active > a:focus,
+#main-nav-header .nav li.active > a {
+  background: #5FA7D3;
+}
+
+/* line 159, ../sass/opf-nav.scss */
+#main-nav-header .nav > li > a:hover,
+#main-nav-header .nav > li > a:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+/* line 163, ../sass/opf-nav.scss */
+#main-nav-header .bill-tab.has-fail-tx .icon {
+  display: inline-block;
+}
+
+/* line 166, ../sass/opf-nav.scss */
+#main-nav-header .bill-tab .icon {
+  display: none;
+  position: relative;
+  top: 2px;
+  color: #D15B47;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+/*小屏幕下tab切换*/
+@media only screen and (max-width: 767px) {
+    /*
+@media only screen and (max-width: 1200px){
+*/
+  /* line 180, ../sass/opf-nav.scss */
+  #navbar {
+    box-shadow: none;
+  }
+
+  /* line 183, ../sass/opf-nav.scss */
+  #main-nav-header {
+    box-shadow: 0px -2px 2px rgba(114, 114, 114, 0.5);
+    width: 100%;
+    clear: both !important;
+    float: none !important;
+    background: #F9F9F9;
+    border-top: 2px solid #F9F9F9;
+    border-bottom: 1px solid #dce8f1;
+    text-align: center;
+    height: 47px;
+  }
+
+  /* line 195, ../sass/opf-nav.scss */
+  #main-nav-header .nav {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 200, ../sass/opf-nav.scss */
+  #main-nav-header .nav > li {
+    width: 33.333333333%;
+    margin-left: 0;
+  }
+
+  /* line 205, ../sass/opf-nav.scss */
+  #main-nav-header .nav li > a {
+    color: #666;
+  }
+
+  /* line 210, ../sass/opf-nav.scss */
+  #main-nav-header .nav li.active > a:hover,
+  #main-nav-header .nav li.active > a:focus,
+  #main-nav-header .nav li.active > a {
+    color: #333;
+    margin-top: -1px;
+    border-top: 2px solid #4c8fbd;
+    border-width: 1px;
+    background: #FFF;
+    border-right: 1px solid #c5d0dc;
+    border-left: 1px solid #c5d0dc;
+    background-color: #FFF;
+    box-shadow: none;
+  }
+}
+/* line 223, ../sass/opf-nav.scss */
+#page-body .tab-pane {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 32px;
+  max-width: 1400px;
+}
+
+/* line 230, ../sass/opf-nav.scss */
+#navbar-container {
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+}

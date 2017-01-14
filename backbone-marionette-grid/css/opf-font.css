@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'opf';
+	src:url('fonts/opf.eot?mxs6pc');
+	src:url('fonts/opf.eot?#iefixmxs6pc') format('embedded-opentype'),
+		url('fonts/opf.woff?mxs6pc') format('woff'),
+		url('fonts/opf.ttf?mxs6pc') format('truetype'),
+		url('fonts/opf.svg?mxs6pc#opf') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-opf-"], [class*=" icon-opf-"] {
+	font-family: 'opf';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-opf-icon-key:before {
+	content: "\e60a";
+}
+.icon-opf-state-change:before {
+	content: "\e609";
+}
+.icon-opf-restart:before {
+	content: "\e605";
+}
+.icon-opf-verify:before {
+	content: "\e606";
+}
+.icon-opf-join-settle:before {
+	content: "\e607";
+}
+.icon-opf-notjoin-settle:before {
+	content: "\e608";
+}
+.icon-opf-receive:before {
+	content: "\e603";
+}
+.icon-opf-settle-sums:before {
+	content: "\e602";
+}
+.icon-opf-settle:before {
+	content: "\e601";
+}
+.icon-opf-confirm-receive:before {
+	content: "\e600";
+}
+.icon-opf-param-config:before {
+	content: "\e604";
+}
+.icon-opf-divide-batch:before {
+	content: "\e60c";
+}
+.icon-opf-process-account:before {
+	content: "\e60d";
+}
+.icon-opf-iboxpay:before {
+	content: "\e611";
+}
+.icon-opf-user:before {
+	content: "\f007";
+}
+.icon-opf-lock:before {
+	content: "\f023";
+}
+.icon-opf-minus-circle:before {
+	content: "\f056";
+}
+.icon-opf-times-circle:before {
+	content: "\f057";
+}
+.icon-opf-check-circle:before {
+	content: "\f058";
+}

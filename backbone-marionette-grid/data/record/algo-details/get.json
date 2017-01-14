@@ -1,0 +1,19 @@
+{
+  "mchtResv1": "1",
+  "settleDate": "20150122",
+  "settleAmt": "0.00",
+  "txAmt": "0.00",
+  "repairAmt": "6776.88",
+  "unrepairAmt": "6776.88",
+  "uperrAmt": "0.00",
+  "feeAmt": "0.00",
+  "errAmt": "0.00",
+  "unErrAmt": null,
+  "gainAmt": "0.00",
+  "txCount": 0,
+  "resultDesc": null,
+  "resultStatus": "0",
+  "currentAmt": "0.00",
+  "reSettleDate": null,
+  "upSettleErrors": []
+}

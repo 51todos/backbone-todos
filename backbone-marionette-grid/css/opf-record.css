@@ -1,0 +1,1066 @@
+@charset "UTF-8";
+/* line 9, ../sass/opf-record.scss */
+.settle-head-wrap {
+  margin-bottom: 24px;
+}
+/* line 16, ../sass/opf-record.scss */
+.settle-head-wrap .settle-title {
+  padding-top: 3px;
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+}
+/* line 22, ../sass/opf-record.scss */
+.settle-head-wrap .back2now-wrapper {
+  display: inline-block;
+  float: right;
+  width: 32%;
+  text-align: right;
+}
+/* line 29, ../sass/opf-record.scss */
+.settle-head-wrap .back2now {
+  padding: 6px 22px;
+}
+/* line 33, ../sass/opf-record.scss */
+.settle-head-wrap .icon-angle-left,
+.settle-head-wrap .icon-angle-right {
+  font-size: 16px;
+}
+/* line 38, ../sass/opf-record.scss */
+.settle-head-wrap .icon-angle-left,
+.settle-head-wrap .icon-angle-right,
+.settle-head-wrap .icon-caret-down {
+  color: #999;
+}
+/* line 44, ../sass/opf-record.scss */
+.settle-head-wrap .btn-group {
+  margin: 0px !important;
+}
+/* line 48, ../sass/opf-record.scss */
+.settle-head-wrap button {
+  height: 44px;
+}
+
+/* line 56, ../sass/opf-record.scss */
+.settle-head-wrap .date {
+  padding-right: 7px;
+}
+
+/* line 60, ../sass/opf-record.scss */
+.settle-head-wrap .record-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  /* line 68, ../sass/opf-record.scss */
+  .xs-container.record-container {
+    width: 100%;
+  }
+
+  /* line 72, ../sass/opf-record.scss */
+  .xs-container .opf-screen-list {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 78, ../sass/opf-record.scss */
+  .xs-container .opf-screen-list table {
+    width: 100%;
+  }
+
+  /* .xs-container .opf-screen-list .more-trigger {
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      background: #eee;
+      cursor: pointer;
+  } */
+  /* line 91, ../sass/opf-record.scss */
+  .opf-screen-detailing .opf-screen-list {
+    display: none !important;
+  }
+
+  /*小屏幕默认不可视*/
+  /* line 95, ../sass/opf-record.scss */
+  .xs-container .opf-screen-detail {
+    display: none;
+  }
+
+  /* line 98, ../sass/opf-record.scss */
+  .opf-screen-detailing .opf-screen-detail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 105, ../sass/opf-record.scss */
+  .record-container {
+    width: 1200px;
+  }
+
+  /* line 108, ../sass/opf-record.scss */
+  .opf-screen-list {
+    padding-right: 32px;
+    width: 872px;
+  }
+
+  /* line 112, ../sass/opf-record.scss */
+  .opf-screen-detail {
+    width: 320px;
+  }
+
+  /* line 116, ../sass/opf-record.scss */
+  .calendar-wrap td {
+    width: 118px;
+  }
+
+  /* line 120, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td {
+    height: 110px;
+  }
+
+  /* line 124, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td div {
+    line-height: 40px;
+  }
+
+  /* line 128, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-date {
+    font-size: 14px;
+  }
+
+  /* line 132, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-amt {
+    font-size: 16px;
+  }
+
+  /* line 136, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-re-settle {
+    font-size: 14px;
+  }
+
+  /* line 140, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-status {
+    font-size: 14px;
+  }
+
+  /* line 144, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner td {
+    font-size: 16px;
+  }
+
+  /* line 148, ../sass/opf-record.scss */
+  .calendar-wrap .calData-wrap.no-data .cal-status {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 155, ../sass/opf-record.scss */
+  .record-container {
+    width: 100%;
+  }
+
+  /* line 158, ../sass/opf-record.scss */
+  .opf-screen-list {
+    padding-right: 1.6%;
+    padding-left: 1%;
+    width: 72.6%;
+  }
+
+  /* line 163, ../sass/opf-record.scss */
+  .opf-screen-detail {
+    width: 25.7%;
+  }
+
+  /* line 167, ../sass/opf-record.scss */
+  .calendar-wrap td {
+    width: 14.3%;
+  }
+
+  /* line 171, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td {
+    height: 110px;
+  }
+
+  /* line 175, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td div {
+    line-height: 40px;
+  }
+
+  /* line 179, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-date {
+    font-size: 12px;
+  }
+
+  /* line 183, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-amt {
+    font-size: 14px;
+  }
+
+  /* line 187, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-re-settle {
+    font-size: 12px;
+  }
+
+  /* line 191, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 196, ../sass/opf-record.scss */
+  .calendar-wrap .calData-wrap.no-data .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 199, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner td {
+    font-size: 14px;
+  }
+
+  /* line 203, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner tbody td {
+    padding: 11px 14px;
+  }
+
+  /* 平板样式>>>> */
+  /* line 208, ../sass/opf-record.scss */
+  .sm-container.record-container {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* line 212, ../sass/opf-record.scss */
+  .sm-container.record-container:before {
+    content: ".";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    text-indent: -9999px;
+    background: #cfcfcf;
+  }
+
+  /* line 222, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list {
+    width: 43%;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+  }
+
+  /* line 230, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list table {
+    width: 100%;
+    border: none;
+  }
+
+  /* line 235, ../sass/opf-record.scss */
+  .sm-container tr.active .td-arrow-inner:before,
+  .sm-container tr.active .td-arrow-inner:after {
+    display: none;
+  }
+
+  /* line 240, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list .more-trigger {
+    border: none;
+  }
+
+  /* line 245, ../sass/opf-record.scss */
+  .sm-container.opf-screen-detailing .opf-screen-detail {
+    width: 57%;
+    position: relative;
+    float: right;
+    /*进入详细页面后，详细页面总是可视*/
+    display: block;
+  }
+
+  /* line 253, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .summary-item {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /* line 260, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .summary-item .back-header {
+    height: 46px;
+    line-height: 46px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /* line 269, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .ct-inner td {
+    font-size: 16px;
+  }
+
+  /* <<<<平板样式 */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* PC日历样式 >>>>*/
+  /* line 278, ../sass/opf-record.scss */
+  .record-container {
+    width: 975px;
+  }
+
+  /* line 281, ../sass/opf-record.scss */
+  .opf-screen-list {
+    width: 708px;
+    padding-right: 15.6px;
+    padding-left: 9.7px;
+  }
+
+  /* line 286, ../sass/opf-record.scss */
+  .opf-screen-detail {
+    width: 250.6px;
+  }
+
+  /* line 290, ../sass/opf-record.scss */
+  .calendar-wrap td {
+    width: 87px;
+  }
+
+  /* line 294, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td {
+    height: 110px;
+  }
+
+  /* line 298, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td div {
+    line-height: 40px;
+  }
+
+  /* line 302, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-date {
+    font-size: 12px;
+  }
+
+  /* line 306, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-amt {
+    font-size: 14px;
+  }
+
+  /* line 310, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-re-settle {
+    font-size: 12px;
+  }
+
+  /* line 314, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 319, ../sass/opf-record.scss */
+  .calendar-wrap .calData-wrap.no-data .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 322, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner td {
+    font-size: 14px;
+  }
+
+  /* line 325, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner tbody td {
+    padding: 11px 14px;
+  }
+
+  /* <<<PC日历样式 */
+  /* 平板样式>>>> */
+  /* line 331, ../sass/opf-record.scss */
+  .sm-container.record-container {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* line 335, ../sass/opf-record.scss */
+  .sm-container.record-container:before {
+    content: ".";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    text-indent: -9999px;
+    background: #cfcfcf;
+  }
+
+  /* line 345, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list {
+    width: 43%;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+  }
+
+  /* line 353, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list table {
+    width: 100%;
+    border: none;
+  }
+
+  /* line 358, ../sass/opf-record.scss */
+  .sm-container tr.active .td-arrow-inner:before,
+  .sm-container tr.active .td-arrow-inner:after {
+    display: none;
+  }
+
+  /* line 363, ../sass/opf-record.scss */
+  .sm-container .opf-screen-list .more-trigger {
+    border: none;
+  }
+
+  /* line 368, ../sass/opf-record.scss */
+  .sm-container.opf-screen-detailing .opf-screen-detail {
+    width: 57%;
+    position: relative;
+    float: right;
+    /*进入详细页面后，详细页面总是可视*/
+    display: block;
+  }
+
+  /* line 376, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .summary-item {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /* line 383, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .summary-item .back-header {
+    height: 46px;
+    line-height: 46px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /* line 392, ../sass/opf-record.scss */
+  .sm-container .opf-screen-detail .ct-inner td {
+    font-size: 16px;
+  }
+
+  /* <<<<平板样式 */
+  /* 手机横屏样式>>>>> */
+  /* line 400, ../sass/opf-record.scss */
+  .xs-container.record-container {
+    width: 100%;
+  }
+
+  /* line 404, ../sass/opf-record.scss */
+  .xs-container .opf-screen-list {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 410, ../sass/opf-record.scss */
+  .xs-container .opf-screen-list table {
+    width: 100%;
+  }
+
+  /* .xs-container .opf-screen-list .more-trigger {
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      background: #eee;
+      cursor: pointer;
+  } */
+  /*小屏幕默认不可视*/
+  /* line 423, ../sass/opf-record.scss */
+  .xs-container .opf-screen-detail {
+    display: none;
+  }
+
+  /* <<<<<手机横屏样式 */
+}
+@media (max-width: 767px) {
+  /* line 431, ../sass/opf-record.scss */
+  .record-container {
+    width: 975px;
+  }
+
+  /* line 434, ../sass/opf-record.scss */
+  .opf-screen-list {
+    width: 708px;
+    padding-right: 15.6px;
+    padding-left: 9.7px;
+  }
+
+  /* line 439, ../sass/opf-record.scss */
+  .opf-screen-detail {
+    width: 250.6px;
+  }
+
+  /* line 443, ../sass/opf-record.scss */
+  .calendar-wrap td {
+    width: 87px;
+  }
+
+  /* line 447, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td {
+    height: 110px;
+  }
+
+  /* line 451, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body td div {
+    line-height: 40px;
+  }
+
+  /* line 455, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-date {
+    font-size: 12px;
+  }
+
+  /* line 459, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-amt {
+    font-size: 14px;
+  }
+
+  /* line 463, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-re-settle {
+    font-size: 12px;
+  }
+
+  /* line 467, ../sass/opf-record.scss */
+  .calendar-wrap .cal-body .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 472, ../sass/opf-record.scss */
+  .calendar-wrap .calData-wrap.no-data .cal-status {
+    font-size: 12px;
+  }
+
+  /* line 475, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner td {
+    font-size: 14px;
+  }
+
+  /* line 479, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner tbody td {
+    padding: 11px 14px;
+  }
+}
+/* line 486, ../sass/opf-record.scss */
+.record-container {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* line 490, ../sass/opf-record.scss */
+.opf-screen-list {
+  position: relative;
+  float: left;
+}
+
+/* line 495, ../sass/opf-record.scss */
+.opf-screen-list .description ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 13px;
+  margin-top: 12px;
+  color: #A7A7A7;
+}
+
+/* 日历内部样式 */
+/* line 503, ../sass/opf-record.scss */
+.calendar-wrap table {
+  width: 100%;
+}
+
+/* line 507, ../sass/opf-record.scss */
+.calendar-wrap .cal-head td {
+  color: #999999;
+}
+
+/* line 511, ../sass/opf-record.scss */
+.calendar-wrap .cal-body {
+  border: 1px solid #CCDEEB;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+/* line 517, ../sass/opf-record.scss */
+.calendar-wrap .cal-body td {
+  border: 1px solid #BCD4E5;
+}
+
+/* line 521, ../sass/opf-record.scss */
+.calendar-wrap .cal-body td div {
+  line-height: 40px;
+}
+
+/* line 525, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .cal-date {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  line-height: 14px;
+}
+
+/* line 531, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .re-settle {
+  font-size: 13px;
+  margin-left: 17px;
+  letter-spacing: 1px;
+  color: #468866;
+}
+
+/* line 538, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .cal-amt {
+  display: block;
+  line-height: 28px;
+}
+
+/* line 543, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .cal-amt.ocupyTwoRows {
+  line-height: 55px;
+  height: 55px;
+}
+
+/* line 548, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .cal-re-settle {
+  line-height: 28px;
+  color: #468847;
+}
+
+/* line 553, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .cal-status {
+  line-height: 26px;
+}
+
+/* line 557, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: 8px;
+}
+
+/* line 564, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap.already-settle:hover,
+.calendar-wrap .cal-body .calData-wrap.settleing:hover,
+.calendar-wrap .cal-body .calData-wrap.settle-fail:hover {
+  background-color: #EBF8FB;
+  cursor: pointer;
+}
+
+/* line 571, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap.active {
+  background-color: #FFFECC;
+}
+
+/* line 575, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap.inMonth {
+  /* font-weight: bold; */
+}
+
+/* line 579, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap.outMonth {
+  color: #999999;
+}
+
+/* line 583, ../sass/opf-record.scss */
+.calendar-wrap .cal-body .calData-wrap.no-data {
+  color: #999999;
+}
+
+/* line 587, ../sass/opf-record.scss */
+.calendar-wrap .calData-wrap.settle-fail .cal-status {
+  color: #D15B47;
+}
+
+/* 日历内部样式 */
+/* line 593, ../sass/opf-record.scss */
+.opf-screen-list .more-trigger {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #CFCFCF;
+  border-top: none;
+  cursor: pointer;
+}
+
+/* line 601, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item {
+  min-height: 710px;
+  border: 1px solid #BCD4E5;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 767px) {
+  /* line 608, ../sass/opf-record.scss */
+  .opf-screen-detail .summary-item {
+    min-height: 0;
+  }
+}
+/* line 615, ../sass/opf-record.scss */
+.opf-screen-detail.summary-item-wrap {
+  position: relative;
+  float: right;
+  min-height: 710px;
+  margin-right: 8px;
+}
+
+/* line 623, ../sass/opf-record.scss */
+.opf-screen-detailing .opf-screen-detail {
+  width: 100%;
+  position: relative;
+  float: left;
+  /*进入详细页面后，详细页面总是可视*/
+  display: block;
+  margin-right: 0;
+}
+
+/* line 632, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .back-header {
+  position: relative;
+  height: 44px;
+  margin-bottom: 24px;
+  line-height: 40px;
+  border-bottom: 1px solid #D1E2ED;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  background: #ECF2F7;
+}
+
+/* line 645, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .back-trigger {
+  font-size: 16px;
+  padding-left: 15px;
+  position: absolute;
+  left: 0;
+}
+
+/* line 652, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .pre-record-container {
+  position: absolute;
+  top: 2px;
+  left: 16px;
+}
+
+/* line 658, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .next-record-container {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+
+/* line 664, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .header i.disabled {
+  color: #999;
+}
+
+/* line 668, ../sass/opf-record.scss */
+.opf-screen-detail .summary-item .switchPanel {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: 100%;
+}
+
+@media (min-width: 1200px) {
+  /* line 676, ../sass/opf-record.scss */
+  .opf-screen-detail .summary-item .switchPanel {
+    display: block;
+  }
+}
+/* line 681, ../sass/opf-record.scss */
+.opf-screen-detail .switchPanel ul {
+  padding-left: 17px;
+}
+
+/* line 685, ../sass/opf-record.scss */
+.opf-screen-detail .switchPanel li {
+  padding-left: 5px;
+  margin-bottom: 5px;
+  line-height: 33px;
+  list-style-type: none;
+  text-align: left;
+  background: #cfcfcf;
+  cursor: pointer;
+}
+
+/* line 695, ../sass/opf-record.scss */
+.opf-screen-detail .switchPanel .disabled {
+  background: #666;
+}
+
+/* line 699, ../sass/opf-record.scss */
+.opf-screen-detail .switchPanel li span {
+  width: 100%;
+  display: inline-block;
+  padding-left: 7px;
+  background: #fff;
+  font-size: 15px;
+}
+
+/* line 707, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner {
+  margin-bottom: 87px;
+}
+
+@media (max-width: 767px) {
+  /* line 711, ../sass/opf-record.scss */
+  .opf-screen-detail .ct-inner {
+    margin-bottom: 0px;
+  }
+}
+/* line 717, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .result-fail-desc {
+  min-height: 40px;
+  margin: 0 16px 22px;
+  padding: 16px 16px 10px;
+  background: #F2DEDE;
+  color: #BB515F;
+  border: 1px solid #EFD5D8;
+}
+
+/* line 727, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .re-settle-desc {
+  min-height: 40px;
+  margin: 0 16px 32px;
+  padding: 16px 16px 10px;
+  background: #dff0d8;
+  color: #468858;
+  border: 1px solid #d6e9c6;
+}
+
+/* line 736, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .result-settling-desc {
+  min-height: 40px;
+  margin: 0 16px 32px;
+  padding: 16px 16px 10px;
+  background: #FFFECC;
+  color: #EE990E;
+  border: 1px solid #FFFE11;
+}
+
+/* line 747, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner table {
+  width: 100%;
+  border: none !important;
+}
+
+/* line 752, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner caption {
+  padding-bottom: 4px;
+  /* 设计图中有一道分隔线，没做出来 */
+  /* border-bottom: 1px solid; */
+  margin-bottom: 4px;
+}
+
+/* line 760, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner tbody td:first-child {
+  position: relative;
+  text-align: left;
+}
+/* line 764, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner tbody td:last-child {
+  text-align: right;
+}
+
+/* line 770, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner tfoot {
+  text-align: right;
+  color: #49885A;
+  background-color: #fff;
+}
+/* line 775, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner tfoot div {
+  padding: 10px 0px;
+  margin: 0px 16px;
+  border-top: 1px solid #999999;
+}
+
+/* line 782, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner tbody tr:last-child td {
+  padding-bottom: 13px;
+}
+
+/* line 786, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner td {
+  border: none;
+}
+
+/* line 791, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner td:first-child {
+  padding-right: 0px;
+}
+
+/* line 795, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner td:last-child {
+  padding-left: 0px;
+}
+
+/* line 799, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .decrease {
+  color: #B94A48;
+}
+
+/* line 803, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .increase {
+  color: #468847;
+}
+
+/* line 807, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner i {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+
+/* line 814, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .settle-no-data {
+  width: 150px;
+  margin: 50% auto 80%;
+  text-align: center;
+}
+
+/* line 820, ../sass/opf-record.scss */
+.opf-screen-detail .ct-inner .settle-no-data span {
+  display: block;
+  width: 150px;
+  height: 190px;
+  margin-bottom: 25%;
+  padding: 35% 20% 25% 20%;
+  font-size: 73px;
+  border: 2px dashed #ccc;
+  color: #ccc;
+}
+
+/* line 831, ../sass/opf-record.scss */
+.opf-screen-detail .switch-container {
+  margin: 0px 16px;
+  padding: 24px 0px;
+  border-top: 1px solid #999;
+}
+
+@media (min-width: 1200px) {
+  /* line 838, ../sass/opf-record.scss */
+  .opf-screen-detail .switch-container {
+    display: none;
+  }
+}
+/* line 843, ../sass/opf-record.scss */
+.opf-screen-detail .switch-container ul {
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+
+/* line 848, ../sass/opf-record.scss */
+.opf-screen-detail .switch-container li {
+  float: left;
+  margin: 0 10px;
+  padding-bottom: 3px;
+  list-style-type: none;
+  color: #6fb3e0;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 858, ../sass/opf-record.scss */
+.opf-screen-detail .switch-container .disabled {
+  background: #999;
+  color: #999;
+}
+
+/* line 863, ../sass/opf-record.scss */
+.opf-screen-detail .switch-container span {
+  display: block;
+  background: #fff;
+}
+
+/* line 868, ../sass/opf-record.scss */
+.ui-dialog .stlm-repair-list .header,
+.ui-dialog .unrepair-amt .header {
+  line-height: 30px;
+  padding: 10px 18px;
+  border-top: 1px solid #E68A8A;
+  border-bottom: 1px solid #E68A8A;
+}
+
+/* line 875, ../sass/opf-record.scss */
+.ui-dialog .stlm-repair-list .header span,
+.ui-dialog .unrepair-amt .header span {
+  font-weight: bold;
+}
+
+/* line 880, ../sass/opf-record.scss */
+.ui-dialog .stlm-repair-list .header td,
+.ui-dialog .unrepair-amt .header td {
+  font-weight: bold;
+}
+
+/* line 885, ../sass/opf-record.scss */
+.ui-dialog .stlm-repair-list .body,
+.ui-dialog .unrepair-amt .body,
+.ui-dialog .stlm-error-list .body,
+.ui-dialog .err-amt-list .body,
+.ui-dialog .upper-amt .body {
+  margin-top: 3px;
+  border-top: 1px solid #E68A8A;
+}
+
+/* line 894, ../sass/opf-record.scss */
+.ui-dialog .foot {
+  border-top: 1px solid #d7d7d7;
+}
+
+/* line 899, ../sass/opf-record.scss */
+.ui-dialog .foot span {
+  font-weight: bold;
+}
+
+/* line 904, ../sass/opf-record.scss */
+.ui-dialog .stlm-error-list .header,
+.ui-dialog .err-amt-list .header {
+  border-top: 1px solid #E68A8A;
+  border-bottom: 1px solid #E68A8A;
+}
+
+/* line 910, ../sass/opf-record.scss */
+.ui-dialog .stlm-error-list .header td,
+.ui-dialog .err-amt-list .header td {
+  font-weight: bold;
+}
+
+/* 差错交易 详情 弹出窗口 */
+/* line 917, ../sass/opf-record.scss */
+.repair-amt-dialog {
+  background: #fff;
+}
+
+/* 差错交易 详情 table */
+/* line 923, ../sass/opf-record.scss */
+.repair-amt-detail .repairamt-oprtype {
+  width: 10%;
+}
+/* line 926, ../sass/opf-record.scss */
+.repair-amt-detail .repairamt-amt {
+  width: 20%;
+}
+/* line 929, ../sass/opf-record.scss */
+.repair-amt-detail .repairamt-oprtime {
+  width: 15%;
+}
+/* line 932, ../sass/opf-record.scss */
+.repair-amt-detail .repairamt-descr {
+  width: 55%;
+}
+
+/* line 936, ../sass/opf-record.scss */
+.repair-amt-detail-pager {
+  text-align: center;
+}

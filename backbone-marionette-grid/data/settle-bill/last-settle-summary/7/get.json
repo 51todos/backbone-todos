@@ -1,0 +1,37 @@
+[
+        {
+            "id":"id1",
+            "settleDate":"20140409",
+            "gainAmt": 654456
+        },
+        {
+            "id":"id2",
+            "settleDate":"20140408",
+            "gainAmt": 854456
+        },
+        {
+            "id":"id3",
+            "settleDate":"20140407",
+            "gainAmt": 954456
+        },
+        {
+            "id":"id4",
+            "settleDate":"20140406",
+            "gainAmt": 1054456
+        },
+        {
+            "id":"id5",
+            "settleDate":"20140405",
+            "gainAmt": 1154456
+        },
+        {
+            "id":"id6",
+            "settleDate":"20140404",
+            "gainAmt": 1454456
+        },
+        {
+            "id":"id7",
+            "settleDate":"20140403",
+            "gainAmt": 2554456
+        }
+    ]
