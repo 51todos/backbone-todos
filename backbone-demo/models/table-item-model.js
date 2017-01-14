@@ -13,10 +13,10 @@ define(function() {
 			state: false
 		},
 
-		// Toggle the `state` state of this todo item.
-		toggle: function () {
+		// Toggle the `state`
+		toggle: function (newState) {
 			this.save({
-				state: !this.get('state')
+				state: newState //!this.get('state')
 			});
 		}
 	});

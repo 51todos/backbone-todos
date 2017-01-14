@@ -33,7 +33,7 @@ define(function() {
 
 		changeState: function(model, state) {
 			console.log(">>>>>>>>>>>>>>>>>>", model, state);
-			this.$el.find(':checkbox').attr('checked', state);
+			this.$el.find(':checkbox').prop('checked', state);
 		},
 
 		action_del: function() {

@@ -31,9 +31,9 @@ define([
 			tableList.create(attrs);
 		},
 
-		checkedAll: function() {
+		checkedAll: function(state) {
 			tableList.each(function(itemModel) {
-				itemModel.toggle();
+				itemModel.toggle(state);
 			})
 		}
 	});

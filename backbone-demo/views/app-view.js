@@ -42,7 +42,7 @@ define([
 			});
 
 			$cb.on('click', function() {
-				that.tableView.checkedAll();
+				that.tableView.checkedAll($cb.is(":checked"));
 			})
 		}
 	})
