@@ -29,7 +29,7 @@
 
     <hr class="clearfix">
 
-    <button type="button" class="btn btn-primary">
+    <button type="button" class="btn btn-primary" id="J_add-item">
         <i class="glyphicon-plus"></i> 新增
     </button>
 </form>
@@ -44,20 +44,3 @@
         <input type="checkbox" id="J_checkedSome" name="checkedSome"> 反选
     </label>
 </div>
-
-<table class="table">
-    <caption>数据表格(tableList)</caption>
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Cid</th>
-        <th>Name</th>
-        <th>Sex</th>
-        <th>Email</th>
-        <th>操作</th>
-    </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
-</table>

@@ -3,12 +3,11 @@
  * Date 2017/1/11
  */
 define([
-	'app/views/app-view'
-], function(AppView) {
-
+	'test/radio/main'
+], function(RadioMain) {
 	return {
 		start: function() {
-			console.log("app start", new AppView);
+			RadioMain.start();
 		}
 	};
 });

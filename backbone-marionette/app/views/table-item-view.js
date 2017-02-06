@@ -2,7 +2,7 @@
  * table-item-model
  */
 define([
-	'tpl!templates/table-item-tpl.html'
+	'tpl!app/templates/table-item.tpl'
 ], function(itemTpl) {
 
 	return Backbone.View.extend({
