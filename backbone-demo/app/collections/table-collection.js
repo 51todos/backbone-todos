@@ -9,7 +9,7 @@ define([
 	var TableCollection = Backbone.Collection.extend({
 		model: TableItemModel,
 
-		localStorage: new Backbone.LocalStorage('backbone-marionette')
+		localStorage: new Backbone.LocalStorage('backbone-demo')
 
 		//url: './list.json'
 	});
