@@ -4,7 +4,7 @@
  */
 define([
 	'require', 'exports', 'module',
-	'views/table-view'
+	'app/views/table-view'
 ], function(require, exports, module, TableView) {
 
 	module.exports = Backbone.View.extend({

@@ -3,8 +3,8 @@
  * Date 2017/1/13
  */
 define([
-	'collections/table-collection',
-	'views/table-item-view'
+	'app/collections/table-collection',
+	'app/views/table-item-view'
 ], function(TableCollection, TableItemView) {
 	var tableList = new TableCollection;
 

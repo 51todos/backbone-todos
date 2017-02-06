@@ -4,7 +4,7 @@
  */
 define([
 	'require', 'exports', 'module', 'jquery',
-	'views/app-view'
+	'app/views/app-view'
 ], function(require, exports, module, $, AppView) {
 
 	/*==========================================*/
