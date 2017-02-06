@@ -6,7 +6,7 @@ requirejs.config({
     baseUrl: './',
 
     // 框架依赖
-    deps:['jquery', 'backbone', 'bootstrap', 'backbone.marionette', 'backbone.localStorage'],
+    deps:['jquery', 'json2', 'bootstrap', 'backbone', 'backbone.marionette', 'backbone.localStorage'],
 
     // 路径配置
     paths: {
@@ -24,14 +24,7 @@ requirejs.config({
 
     // 配置模块依赖
     shim: {
-        'backbone.marionette': {
-            deps: ['backbone'],
-            exports: 'Marionette'
-        },
-        'backbone': {
-            deps: ['jquery', 'underscore', 'json2'],
-            exports: 'Backbone'
-        },
+        'backbone.marionette': ['backbone'],
         'backbone.localStorage': ['backbone'],
         //'backbone.syphon': ['backbone'],
 
@@ -40,8 +33,11 @@ requirejs.config({
 
     // 框架回调
     callback: function() {
-        require(['app'], function(App) {
+        window.Mn = window.Marionette = Backbone.Marionette;
+
+        require(['app', 'test'], function(App, Test) {
             App.start();
+            Test.start();
         });
     }
 });
