@@ -6,7 +6,7 @@ requirejs.config({
     baseUrl: './',
 
     // 框架依赖
-    deps:['jquery', 'json2', 'bootstrap', 'backbone', 'backbone.marionette', 'backbone.localStorage'],
+    deps:['jquery', 'json2', 'bootstrap', 'backbone', 'backbone.epoxy', 'backbone.marionette', 'backbone.localStorage'],
 
     // 路径配置
     paths: {
@@ -15,6 +15,7 @@ requirejs.config({
         'underscore': '../bower_components/underscore/underscore',
         'backbone': '../bower_components/backbone/backbone',
         'backbone.marionette': '../bower_components/backbone.marionette/lib/backbone.marionette',
+        'backbone.epoxy': '../bower_components/backbone.epoxy/backbone.epoxy',
         'backbone.localStorage': '../bower_components/backbone.localStorage/backbone.localStorage',
         'backbone.radio': '../bower_components/backbone.radio/build/backbone.radio',
         'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap',
@@ -25,6 +26,7 @@ requirejs.config({
     // 配置模块依赖
     shim: {
         'backbone.marionette': ['backbone'],
+        'backbone.epoxy': ['backbone'],
         'backbone.localStorage': ['backbone'],
         //'backbone.syphon': ['backbone'],
 
@@ -34,6 +36,7 @@ requirejs.config({
     // 框架回调
     callback: function() {
         window.Mn = window.Marionette = Backbone.Marionette;
+        window.Ex = window.Epoxy = Backbone.Epoxy;
 
         require(['app', 'test'], function(App, Test) {
             App.start();
